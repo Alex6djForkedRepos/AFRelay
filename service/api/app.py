@@ -17,3 +17,12 @@ def generate_invoice(sale_data: RootModel) -> dict:
     CAE_response = request_invoice_controller(parsed_data)
 
     return CAE_response
+
+# ===================
+# == HEALTH CHECKS ==
+# ===================
+
+@app.get("/health/liveness")
+def health_check_liveness() -> dict:
+
+    return {"health" : "ok"}
