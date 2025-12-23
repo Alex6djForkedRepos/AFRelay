@@ -3,7 +3,7 @@ from zeep.helpers import serialize_object
 from service.utils.logger import logger
 
 
-def convert_zeep_object_to_dict(returned_xml: object) -> dict:
+def convert_zeep_object_to_dict(afip_response: object) -> dict:
 
     """
     Zeep usually returns an object of type '<class 'zeep.objects.[service response]'>'.
@@ -12,7 +12,7 @@ def convert_zeep_object_to_dict(returned_xml: object) -> dict:
     """
 
     # Convert to dict/OrderedDict
-    serialized_xml = serialize_object(returned_xml)
+    serialized_xml = serialize_object(afip_response)
     logger.debug("Zeep object converted to dict.")
 
     return serialized_xml
