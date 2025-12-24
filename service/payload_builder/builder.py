@@ -9,13 +9,6 @@ def add_auth_to_payload(sale_data: dict, token: str, sign: str) -> dict:
 
     return sale_data
 
-def extract_ptovta_and_cbtetipo(parsed_data: dict) -> tuple[int, str, str]:
-    cuit = int(parsed_data["Auth"]["Cuit"])
-    ptovta = int(parsed_data["FeCAEReq"]["FeCabReq"]["PtoVta"])
-    cbtetipo = int(parsed_data["FeCAEReq"]["FeCabReq"]["CbteTipo"])
-
-    return cuit, ptovta, cbtetipo
-
 def build_auth(token: str, sign: str, cuit: int) -> dict:
 
     auth = {
