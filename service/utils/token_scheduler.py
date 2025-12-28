@@ -10,11 +10,19 @@ scheduler = AsyncIOScheduler()
 
 async def run_job():
     logger.info("Starting job: verifying token expiration")
+
+    if not xml_exists("loginTicketRequest.xml"):
+        await generate_token()
+        return
     
     if xml_exists("loginTicketResponse.xml"):
         if is_expired("loginTicketResponse.xml"):
             await generate_token()
             return
+        
+    if not xml_exists("loginTicketResponse.xml"):
+        await generate_token()
+        return
         
     logger.info("Token is still valid. Job finished.")
 
