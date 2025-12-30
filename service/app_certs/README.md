@@ -1,4 +1,4 @@
-# `certificates/` Folder
+# `app_certs/` Folder
 
 This folder is intended to store cryptographic files related to the web service, such as:
 
