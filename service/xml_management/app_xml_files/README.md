@@ -1,9 +1,11 @@
-# `app_xml_files/` Folder
+# `app_xml/` Folder
 
-This folder contains the .xml files needed to send information to the web service.  
+This folder is used internally by the web service to access XML files needed to send information.  
 
 - loginTicketRequest.xml
 - loginTicketResponse.xml
+
+Files placed in the host folder `host_xml/` are mounted here as a Docker volume.  
 
 For security reasons, these files are excluded from the repository using `.gitignore`.
 
