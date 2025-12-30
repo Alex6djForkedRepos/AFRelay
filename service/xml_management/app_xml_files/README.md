@@ -1,4 +1,4 @@
-# `certificates/` Folder
+# `app_xml_files/` Folder
 
 This folder contains the .xml files needed to send information to the web service.  
 
