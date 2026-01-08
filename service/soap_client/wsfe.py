@@ -39,7 +39,7 @@ async def fecae_solicitar(full_built_invoice: dict) -> dict:
                 "response" : invoice_result
                 }
     
-    except (httpx.ConnectError, httpx.TimeoutException):
+    except (httpx.ConnectError, httpx.TimeoutException) as e:
         return build_error_response(METHOD, "Network error", str(e))
     
     except TransportError as e:
@@ -85,7 +85,7 @@ async def fe_comp_ultimo_autorizado(auth: dict, ptovta: int, cbtetipo: int) -> d
                 "response" : last_authorized_invoice
                 }
     
-    except (httpx.ConnectError, httpx.TimeoutException):
+    except (httpx.ConnectError, httpx.TimeoutException) as e:
         return build_error_response(METHOD, "Network error", str(e))
     
     except TransportError as e:
@@ -130,7 +130,7 @@ async def fe_comp_consultar(auth: dict, fecomp_req: dict) -> dict:
                 "response" : invoice_info
                 }
     
-    except (httpx.ConnectError, httpx.TimeoutException):
+    except (httpx.ConnectError, httpx.TimeoutException) as e:
         return build_error_response(METHOD, "Network error", str(e))
     
     except TransportError as e:
