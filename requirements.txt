@@ -16,6 +16,7 @@ ntplib==0.4.0
 httpx==0.25.2
 apscheduler==3.11.2
 uvicorn[standard]==0.40.0
+coverage==7.13.1
 
 # Testing
 pytest==9.0.2
