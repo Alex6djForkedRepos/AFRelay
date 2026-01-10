@@ -1,4 +1,5 @@
-from service.xml_management.xml_builder import build_login_ticket_request, parse_and_save_loginticketresponse
+from service.xml_management.xml_builder import (
+    build_login_ticket_request, extract_token_and_sign_from_xml)
 
 
 def test_build_login_ticket_request():
@@ -13,3 +14,11 @@ def test_build_login_ticket_request():
     root = build_login_ticket_request(fake_time_provider)
 
     assert root.find("header/uniqueId").text == "1767764408"
+
+
+def test_extract_token_and_sign_from_xml():
+
+    token, sign = extract_token_and_sign_from_xml()
+
+    assert token == "fake_token"
+    assert sign == "fake_sign"
