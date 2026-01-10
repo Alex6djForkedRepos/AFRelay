@@ -1,5 +1,4 @@
 from zeep import Client
-from zeep.exceptions import Fault, TransportError
 
 
 def list_afip_operations() -> None:
