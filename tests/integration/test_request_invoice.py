@@ -7,7 +7,6 @@ SOAP_RESPONSE = """
     xmlns:ar="http://ar.gov.afip.dif.FEV1/">
     <soap-env:Header/>
     <soap-env:Body>
-
         <ar:FECAESolicitarResponse>
             <ar:FECAESolicitarResult>
                 <ar:FeCabResp>
@@ -25,19 +24,16 @@ SOAP_RESPONSE = """
                         <ar:Msg>Evento de prueba</ar:Msg>
                     </ar:Evt>
                 </ar:Events>
-
                 <ar:Errors/>
-
             </ar:FECAESolicitarResult>
         </ar:FECAESolicitarResponse>
-
     </soap-env:Body>
 </soap-env:Envelope>
 """
 
 
 @pytest.mark.asyncio
-async def test_request_invoice_minimal(client: AsyncClient, httpserver_fixed_port, wsfe_manager, override_auth):
+async def test_request_invoice_success(client: AsyncClient, httpserver_fixed_port, wsfe_manager, override_auth):
 
     # Configure http server
     httpserver_fixed_port.expect_request("/soap", method="POST").respond_with_data(
@@ -66,7 +62,13 @@ async def test_request_invoice_minimal(client: AsyncClient, httpserver_fixed_por
                     "MonId": "PES",
                     "MonCotiz": 1.0,
                     "CondicionIVAReceptorId": 5,
-                    "Iva": {"AlicIva": {"Id": 5, "BaseImp": 1000.0, "Importe": 210.0}},
+                    "Iva": {
+                        "AlicIva": {
+                            "Id": 5, 
+                            "BaseImp": 1000.0, 
+                            "Importe": 210.0
+                            }
+                        },
                 }
             },
         },
@@ -80,12 +82,15 @@ async def test_request_invoice_minimal(client: AsyncClient, httpserver_fixed_por
     assert data["status"] == "success"
 
 
+# Generic error only for test the API behavior in error cases. Exceptions are already tested in unit tests.
 @pytest.mark.asyncio
-async def test_request_invoice_httperror(client: AsyncClient, httpserver_fixed_port, wsfe_manager, override_auth):
+async def test_request_invoice_error(client: AsyncClient, httpserver_fixed_port, wsfe_manager, override_auth):
 
     # Configure http server
     httpserver_fixed_port.expect_request("/not_existent", method="POST").respond_with_data(
-        SOAP_RESPONSE, content_type="text/xml"
+        "Internal Server Error",
+        status=500,
+        content_type="text/plain",
     )
 
     # Payload
@@ -110,7 +115,13 @@ async def test_request_invoice_httperror(client: AsyncClient, httpserver_fixed_p
                     "MonId": "PES",
                     "MonCotiz": 1.0,
                     "CondicionIVAReceptorId": 5,
-                    "Iva": {"AlicIva": {"Id": 5, "BaseImp": 1000.0, "Importe": 210.0}},
+                    "Iva": {
+                        "AlicIva": {
+                            "Id": 5, 
+                            "BaseImp": 1000.0, 
+                            "Importe": 210.0
+                            }
+                        },
                 }
             },
         },

@@ -7,7 +7,6 @@ SOAP_RESPONSE = """<?xml version='1.0' encoding='UTF-8'?>
         <FECompConsultarResponse xmlns="http://ar.gov.afip.dif.FEV1/">
             <FECompConsultarResult>
                 <ResultGet>
-                
                     <Concepto>1</Concepto>
                     <DocTipo>80</DocTipo>
                     <DocNro>20123456789</DocNro>
@@ -22,7 +21,6 @@ SOAP_RESPONSE = """<?xml version='1.0' encoding='UTF-8'?>
                     <ImpIVA>21.00</ImpIVA>
                     <MonId>PES</MonId>
                     <MonCotiz>1.000</MonCotiz>
-
                     <PtoVta>1</PtoVta>
                     <CbteTipo>6</CbteTipo>
                 </ResultGet>
@@ -36,7 +34,7 @@ SOAP_RESPONSE = """<?xml version='1.0' encoding='UTF-8'?>
 
 
 @pytest.mark.asyncio
-async def test_consult_invoice_minimal(client: AsyncClient, httpserver_fixed_port, wsfe_manager, override_auth):
+async def test_consult_invoice_success(client: AsyncClient, httpserver_fixed_port, wsfe_manager, override_auth):
 
     # Configure http server
     httpserver_fixed_port.expect_request("/soap", method="POST").respond_with_data(
@@ -59,12 +57,15 @@ async def test_consult_invoice_minimal(client: AsyncClient, httpserver_fixed_por
     assert data["status"] == "success"
 
 
+# Generic error only for test the API behavior in error cases. Exceptions are already tested in unit tests.
 @pytest.mark.asyncio
-async def test_consult_invoice_httperror(client: AsyncClient, httpserver_fixed_port, wsfe_manager, override_auth):
+async def test_consult_invoice_error(client: AsyncClient, httpserver_fixed_port, wsfe_manager, override_auth):
 
     # Configure http server
     httpserver_fixed_port.expect_request("/not_existent", method="POST").respond_with_data(
-        SOAP_RESPONSE, content_type="text/xml"
+    "Internal Server Error",
+    status=500,
+    content_type="text/plain",
     )
 
     # Payload
