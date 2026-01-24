@@ -2,6 +2,7 @@ import httpx
 from zeep import AsyncClient
 from zeep.transports import AsyncTransport
 
+from config.paths import get_as_bytes
 from service.crypto.sign import sign_login_ticket_request
 from service.soap_client.wsaa import consult_afip_wsaa
 from service.soap_client.wsdl.wsdl_manager import get_wsaa_wsdl
@@ -18,7 +19,8 @@ async def generate_afip_access_token() -> dict:
 
     root = build_login_ticket_request(generate_ntp_timestamp)
     save_xml(root, "loginTicketRequest.xml")
-    b64_cms = sign_login_ticket_request()
+    login_ticket_request_bytes, private_key_bytes, certificate_bytes = get_as_bytes()
+    b64_cms = sign_login_ticket_request(login_ticket_request_bytes, private_key_bytes, certificate_bytes)
 
     async def login_cms():
         try:
