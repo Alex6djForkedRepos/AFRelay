@@ -29,8 +29,5 @@ __pycache__/
 !service/xml_management/app_xml_files/.gitkeep
 !service/xml_management/app_xml_files/README.md
 
-# Ignore cms files
-*.cms
-
 # Ignore .coverage file
 .coverage
