@@ -106,7 +106,7 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       <wsdl:port binding="impl:LoginCmsSoapBinding" name="LoginCms">
 
-         <wsdlsoap:address location="http://localhost:62768/soap"/>
+         <wsdlsoap:address location="http://localhost:23592/soap"/>
 
       </wsdl:port>
 
