@@ -101,7 +101,7 @@ class FeCAEReq(BaseModel):
 class Auth(BaseModel):
     """
     Token and Sign will taken 
-    from loginTicketResponse in the service
+    from loginTicketResponse.xml in the service
     """
     Cuit: int
 
