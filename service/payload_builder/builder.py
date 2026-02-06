@@ -2,7 +2,7 @@ from service.utils.logger import logger
 from service.xml_management.xml_builder import extract_token_and_sign_from_xml
 
 
-# Used in api.wsfe.generate_invoice
+# Used in api.wsfe.fecae_solicitar
 def add_auth_to_payload(sale_data: dict, token: str, sign: str) -> dict:
 
     sale_data['Auth']['Token'] = token
@@ -11,6 +11,7 @@ def add_auth_to_payload(sale_data: dict, token: str, sign: str) -> dict:
 
     return sale_data
 
+# For all operations
 def build_auth(sale_data: dict) -> dict:
     token, sign = extract_token_and_sign_from_xml()
     cuit = sale_data["Cuit"]
@@ -21,6 +22,7 @@ def build_auth(sale_data: dict) -> dict:
         "Cuit" : cuit,
     }
 
+# Used in api.wsfe.fe_comp_consultar
 def build_fecomp_req(comp_info: dict) -> dict:
 
     return {
