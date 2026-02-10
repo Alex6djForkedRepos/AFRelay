@@ -1,4 +1,5 @@
 from pydantic import BaseModel, ConfigDict, Field
+from service.api.models.common import Auth
 
 
 class Actividad(BaseModel):
@@ -55,7 +56,7 @@ class FECAEADetRequest(BaseModel):
     DocNro: int
     CbteDesde: int
     CbteHasta: int
-    CbteFech: str
+    CbteFch: str
     ImpTotal: float
     ImpTotConc: float
     ImpNeto: float
@@ -93,12 +94,6 @@ class FeCAEARegInfReq(BaseModel):
     FeCabReq: FeCabReq
     FeDetReq: FeDetReq
 
-class Auth(BaseModel):
-    """
-    Token and Sign will taken 
-    from loginTicketResponse.xml in the service
-    """
-    Cuit: int
 
 class FECAEARegInformativo(BaseModel):
     Auth: Auth
