@@ -46,9 +46,11 @@ async def test_consult_invoice_success(client: AsyncClient, wsfe_httpserver_fixe
         "Auth": {
             "Cuit": 30740253022
         },
-        "PtoVta": 1,
-        "CbteTipo": 6,
-        "CbteNro": 100,
+        "FeCompConsReq": {
+            "PtoVta": 1,
+            "CbteTipo": 6,
+            "CbteNro": 100,
+        }
     }
 
     # Fastapi endpoint call
@@ -75,9 +77,11 @@ async def test_consult_invoice_error(client: AsyncClient, wsfe_httpserver_fixed_
         "Auth": {
             "Cuit": 30740253022
         },
-        "PtoVta": 1,
-        "CbteTipo": 6,
-        "CbteNro": 100,
+        "FeCompConsReq": {
+            "PtoVta": 1,
+            "CbteTipo": 6,
+            "CbteNro": 100,
+        }
     }
 
     # Fastapi endpoint call
