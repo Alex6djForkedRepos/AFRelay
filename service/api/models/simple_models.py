@@ -41,3 +41,37 @@ class FEParamGetCotizacion(BaseModel):
 
     MonId: str
     FchCotiz: str | None = None
+
+class FEParamGetTiposTributos(BaseModel):
+    Auth: Auth
+
+class FEParamGetTiposMonedas(BaseModel):
+    Auth: Auth
+
+class FEParamGetTiposIva(BaseModel):
+    Auth: Auth
+
+class FEParamGetTiposOpcional(BaseModel):
+    Auth: Auth
+
+class FEParamGetTiposConcepto(BaseModel):
+    Auth: Auth
+
+class FEParamGetPtosVenta(BaseModel):
+    Auth: Auth
+
+class FEParamGetTiposCbte(BaseModel):
+    Auth: Auth
+
+class FEParamGetCondicionIvaReceptor(BaseModel):
+    Auth: Auth
+    ClaseCmp: str | None = None
+
+class FEParamGetTiposDoc(BaseModel):
+    Auth: Auth
+
+class FEParamGetTiposPaises(BaseModel):
+    Auth: Auth
+
+class FEParamGetActividades(BaseModel):
+    Auth: Auth
