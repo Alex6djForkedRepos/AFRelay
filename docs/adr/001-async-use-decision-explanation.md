@@ -1,4 +1,4 @@
-## Architecture Decision Record 12/20/2025
+## Architecture Decision Record 20/12/2025
 Async use decision explanation
 
 It was decided to use async/await because, even though massive concurrency is probably not expected, it is important to avoid blocking the server while waiting for responses from AFIP services.
