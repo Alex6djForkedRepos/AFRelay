@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 
-from service.api.models.fe_comp_consultar import FECompConsultar
-from service.api.models.fecae_solicitar import FECAESolicitar
-from service.api.models.fecaea_reg_informativo import FECAEARegInformativo
-from service.api.models.simple_models import (FECAEAConsultar,
+from service.api.request_models.fe_comp_consultar import FECompConsultar
+from service.api.request_models.fecae_solicitar import FECAESolicitar
+from service.api.request_models.fecaea_reg_informativo import FECAEARegInformativo
+from service.api.request_models.simple_models import (FECAEAConsultar,
                                               FECAEASinMovimientoConsultar,
                                               FECAEASinMovimientoInformar,
                                               FECAEASolicitar,

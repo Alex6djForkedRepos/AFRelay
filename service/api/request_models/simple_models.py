@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from service.api.models.common import Auth
+from service.api.request_models.common import Auth
 
 
 class FECompTotXRequest(BaseModel):
