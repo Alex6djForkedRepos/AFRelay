@@ -1,6 +1,5 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from service.api.request_models.common import Auth
 from service.api.response_models.common import Errors, Events
 
 
