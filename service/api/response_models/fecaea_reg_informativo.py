@@ -1,6 +1,6 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from service.api.response_models.common import Errors, Events
+from service.api.response_models.common import Errors, Events, Observaciones
 
 
 class Obs(BaseModel):
@@ -35,9 +35,6 @@ class FECAEADetResponse(BaseModel):
     CbteFch: str | None = None
     Resultado: str | None = None
     CAEA: str | None = None
-
-    observaciones: Observaciones | None = Field(None, alias="Observaciones")
-
 
 class FECabResponse(BaseModel):
     Cuit: int
