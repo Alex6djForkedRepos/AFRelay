@@ -12,6 +12,7 @@ from service.api.request_models.simple_models import (
     FEParamGetTiposConcepto, FEParamGetTiposDoc, FEParamGetTiposIva,
     FEParamGetTiposMonedas, FEParamGetTiposOpcional, FEParamGetTiposPaises,
     FEParamGetTiposTributos)
+from service.api.response_models.fecaea_solicitar import FECAEASolicitarResponse
 from service.api.response_models.common import APIErrorResponseModel
 from service.api.response_models.fe_comp_consultar import \
     FECompConsultarResponse
@@ -115,7 +116,7 @@ async def fecaea_reg_informativo(data: FECAEARegInformativo, jwt = Depends(verif
     return result
 
 
-@router.post("/wsfe/FECAEASolicitar")
+@router.post("/wsfe/FECAEASolicitar", response_model=FECAEASolicitarResponse | APIErrorResponseModel)
 async def fecaea_solicitar(data: FECAEASolicitar, jwt = Depends(verify_token)) -> dict:
 
     data = data.model_dump(by_alias=True, exclude_none=True)
