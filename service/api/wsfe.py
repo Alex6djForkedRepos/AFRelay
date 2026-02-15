@@ -16,6 +16,7 @@ from service.api.response_models.common import APIErrorResponseModel
 from service.api.response_models.fe_comp_consultar import \
     FECompConsultarResponse
 from service.api.response_models.fecae_solicitar import FECAESolicitarResponse
+from service.api.response_models.fecaea_reg_informativo import FECAEARegInformativoResponse
 from service.api.response_models.simple_models import (
     FECompTotXRequestResponse, FECompUltimoAutorizadoResponse)
 from service.payload_builder.builder import add_auth_to_payload
@@ -98,7 +99,7 @@ async def fe_comp_consultar(comp_info: FECompConsultar, jwt = Depends(verify_tok
     return result
 
 
-@router.post("/wsfe/FECAEARegInformativo")
+@router.post("/wsfe/FECAEARegInformativo", response_model=FECAEARegInformativoResponse | APIErrorResponseModel)
 async def fecaea_reg_informativo(data: FECAEARegInformativo, jwt = Depends(verify_token)) -> dict:
     
     data = data.model_dump(by_alias=True, exclude_none=True)
