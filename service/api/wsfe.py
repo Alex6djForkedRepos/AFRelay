@@ -23,7 +23,9 @@ from service.api.response_models.fecaea_solicitar import \
 from service.api.response_models.simple_models import (
     FECAEAConsultarResponse, FECAEASinMovimientoConsultarResponse,
     FECAEASinMovimientoInformarResponse, FECompTotXRequestResponse,
-    FECompUltimoAutorizadoResponse, FEParamGetCotizacionResponse)
+    FECompUltimoAutorizadoResponse, FEParamGetCotizacionResponse,
+    FEParamGetTiposIvaResponse, FEParamGetTiposMonedasResponse,
+    FEParamGetTiposOpcionalResponse, FEParamGetTiposTributosResponse)
 from service.payload_builder.builder import add_auth_to_payload
 from service.soap_client.async_client import WSFEClientManager
 from service.soap_client.wsdl.wsdl_manager import get_wsfe_wsdl
@@ -200,7 +202,7 @@ async def fe_param_get_cotization(data: FEParamGetCotizacion, jwt = Depends(veri
     return result
 
 
-@router.post("/wsfe/FEParamGetTiposTributos")
+@router.post("/wsfe/FEParamGetTiposTributos", response_model=FEParamGetTiposTributosResponse | APIErrorResponseModel)
 async def fe_param_get_tipos_tributos(data: FEParamGetTiposTributos, jwt = Depends(verify_token)) -> dict:
 
     data = data.model_dump(by_alias=True, exclude_none=True)
@@ -216,7 +218,7 @@ async def fe_param_get_tipos_tributos(data: FEParamGetTiposTributos, jwt = Depen
     return result
 
 
-@router.post("/wsfe/FEParamGetTiposMonedas")
+@router.post("/wsfe/FEParamGetTiposMonedas", response_model=FEParamGetTiposMonedasResponse | APIErrorResponseModel)
 async def fe_param_get_tipos_monedas(data: FEParamGetTiposMonedas, jwt = Depends(verify_token)) -> dict:
 
     data = data.model_dump(by_alias=True, exclude_none=True)
@@ -232,7 +234,7 @@ async def fe_param_get_tipos_monedas(data: FEParamGetTiposMonedas, jwt = Depends
     return result
 
 
-@router.post("/wsfe/FEParamGetTiposIva")
+@router.post("/wsfe/FEParamGetTiposIva", response_model=FEParamGetTiposIvaResponse | APIErrorResponseModel)
 async def fe_param_get_tipos_iva(data: FEParamGetTiposIva, jwt = Depends(verify_token)) -> dict:
 
     data = data.model_dump(by_alias=True, exclude_none=True)
@@ -248,7 +250,7 @@ async def fe_param_get_tipos_iva(data: FEParamGetTiposIva, jwt = Depends(verify_
     return result
 
 
-@router.post("/wsfe/FEParamGetTiposOpcional")
+@router.post("/wsfe/FEParamGetTiposOpcional", response_model=FEParamGetTiposOpcionalResponse | APIErrorResponseModel)
 async def fe_param_get_tipos_opcional(data: FEParamGetTiposOpcional, jwt = Depends(verify_token)) -> dict:
 
     data = data.model_dump(by_alias=True, exclude_none=True)
