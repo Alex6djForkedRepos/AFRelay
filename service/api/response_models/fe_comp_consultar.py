@@ -49,6 +49,9 @@ class CbtesAsoc(BaseModel):
     CbteAsoc: CbteAsoc
 
 class ResultGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+
     Concepto: int
     DocTipo: int
     DocNro: int
@@ -85,7 +88,7 @@ class ResultGet(BaseModel):
     PtoVta: int
     CbteTipo: int
 
-class FECompConsultaResponse(BaseModel):
+class FECompConsultarResult(BaseModel): 
 
     model_config = ConfigDict(populate_by_name=True)
 
@@ -96,4 +99,4 @@ class FECompConsultaResponse(BaseModel):
 
 class FECompConsultarResponse(BaseModel):
     status: str
-    response: FECompConsultaResponse
+    response: FECompConsultarResult
