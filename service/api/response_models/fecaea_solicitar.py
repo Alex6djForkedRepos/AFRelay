@@ -2,7 +2,11 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from service.api.response_models.common import Errors, Events, Observaciones
 
+
 class FECAEAGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+
     CAEA: str | None = None
     Periodo: int
     Orden: int
@@ -13,8 +17,8 @@ class FECAEAGet(BaseModel):
 
     observaciones: Observaciones | None = Field(None, alias="Observaciones")
 
-
 class FECAEASolicitarResult(BaseModel):
+
     model_config = ConfigDict(populate_by_name=True)
 
     fecaea_get: FECAEAGet | None = Field(None, alias="FECAEAGet")
