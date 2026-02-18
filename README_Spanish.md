@@ -3,7 +3,7 @@
 [![CI](https://github.com/NehuenLian/AFRelay/actions/workflows/tests.yml/badge.svg)](https://github.com/NehuenLian/AFRelay/actions/workflows/tests.yml)
 [![coverage](https://img.shields.io/codecov/c/github/NehuenLian/AFRelay?label=coverage&token=20WL0URAGI)](https://codecov.io/github/NehuenLian/AFRelay)
 
-**AFRelay** Es un middleware que evita al desarrollador armar XML y que deja comunicarse con AFIP como si fuera una API REST.  
+**AFRelay** Es un middleware que evita al desarrollador tratar con el ecosistema XML y que permite comunicarse con AFIP como si fuera una API REST.  
 **Control total**: Gratis. Sin modelo SaaS. Sin infraestructura Closed-Source.  
 Sin la necesidad de que el desarrollador se involucre con SOAP.
 
