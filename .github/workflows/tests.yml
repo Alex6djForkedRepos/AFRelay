@@ -5,20 +5,15 @@ on:
         branches:
             - main
         paths-ignore:
-          - 'README.md'
-          - 'README_Spanish.md'
-          - 'CONTRIBUTING.md'
-          - 'pull_request_template.md'
+          - '**.md'
+          - '.github/**'
 
     pull_request:
         branches:
             - main
         paths-ignore:
-          - 'README.md'
-          - 'README_Spanish.md'
-          - 'CONTRIBUTING.md'
-          - 'pull_request_template.md'
-
+          - '**.md'
+          - '.github/**'
 
 jobs:
     test:
