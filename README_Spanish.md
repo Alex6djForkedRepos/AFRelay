@@ -3,6 +3,12 @@
 [![CI](https://github.com/NehuenLian/AFRelay/actions/workflows/tests.yml/badge.svg)](https://github.com/NehuenLian/AFRelay/actions/workflows/tests.yml)
 [![coverage](https://img.shields.io/codecov/c/github/NehuenLian/AFRelay?label=coverage&token=20WL0URAGI)](https://codecov.io/github/NehuenLian/AFRelay)
 
+<p align="center">
+  <a href="https://af-relay-docs.vercel.app/intro">Documentacion</a>
+  ·
+  <a href="https://github.com/NehuenLian/AFRelay-E2E-Manual-tests">Repo de tests E2E</a>
+</p>
+
 **AFRelay** Es un middleware que evita al desarrollador tratar con el ecosistema XML y que permite comunicarse con AFIP como si fuera una API REST.  
 **Control total**: Gratis. Sin modelo SaaS. Sin infraestructura Closed-Source.  
 Sin la necesidad de que el desarrollador se involucre con SOAP.
