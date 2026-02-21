@@ -2,6 +2,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 from zeep import AsyncClient
+
 from .soap_responses import loginCmsResponse
 
 
@@ -35,6 +36,7 @@ async def test_login_cms_success(
     assert parse_and_save_loginticketresponse_mock.call_count == 1
 
 
+# Generic error only for test the API behavior in error cases. Exceptions are already tested in unit tests.
 @pytest.mark.asyncio
 async def test_login_cms_error(
                                                 client: AsyncClient, 
