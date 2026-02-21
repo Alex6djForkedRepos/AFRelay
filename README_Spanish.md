@@ -122,7 +122,9 @@ Una vez obtenidos los archivos necesarios, se pueden colocar en las siguientes c
 
   ```text
   AFRelay
+  ├── .github/
   ├── config/
+  ├── docs/
   ├── host_certs/
   ├── host_xml/
   ├── service/

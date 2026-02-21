@@ -114,7 +114,9 @@ Once authenticated, the authentication web service will provide two credentials:
 
   ```text
   AFRelay
+  ├── .github/
   ├── config/
+  ├── docs/
   ├── host_certs/
   ├── host_xml/
   ├── service/
