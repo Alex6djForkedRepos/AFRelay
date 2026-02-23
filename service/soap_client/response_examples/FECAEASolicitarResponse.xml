@@ -1,0 +1,25 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Header>
+    <FEHeaderInfo xmlns="http://ar.gov.afip.dif.FEV1/">
+      <ambiente>HomologacionExterno - sr2</ambiente>
+      <fecha>2026-02-22T22:26:40.4502142-03:00</fecha>
+      <id>7.0.0.0</id>
+    </FEHeaderInfo>
+  </soap:Header>
+<soap:Body>
+    <FECAEASolicitarResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+      <FECAEASolicitarResult>
+        <ResultGet>
+          <CAEA>87080030400901</CAEA> 
+          <Periodo>202602</Periodo>
+          <Orden>2</Orden>
+          <FchVto>20260305</FchVto> 
+          <FchVigDesde>20260216</FchVigDesde>
+          <FchVigHasta>20260228</FchVigHasta>
+          <FchLimiteInf>20260307</FchLimiteInf> 
+          <FchProceso>20260222223015</FchProceso>
+        </ResultGet>
+        </FECAEASolicitarResult>
+    </FECAEASolicitarResponse>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,1201 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Header>
+    <FEHeaderInfo xmlns="http://ar.gov.afip.dif.FEV1/">
+      <ambiente>HomologacionExterno - sr2</ambiente>
+      <fecha>2026-02-22T22:45:47.7175861-03:00</fecha>
+      <id>7.0.0.0</id>
+    </FEHeaderInfo>
+  </soap:Header>
+  <soap:Body>
+    <FEParamGetTiposPaisesResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+      <FEParamGetTiposPaisesResult>
+        <ResultGet>
+          <PaisTipo>
+            <Id>101</Id>
+            <Desc>BURKINA FASO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>102</Id>
+            <Desc>ARGELIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>103</Id>
+            <Desc>BOTSWANA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>104</Id>
+            <Desc>BURUNDI</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>105</Id>
+            <Desc>CAMERUN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>107</Id>
+            <Desc>REP. CENTROAFRICANA.</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>108</Id>
+            <Desc>CONGO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>109</Id>
+            <Desc>REP.DEMOCRAT.DEL CONGO EX ZAIRE</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>110</Id>
+            <Desc>COSTA DE MARFIL</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>111</Id>
+            <Desc>CHAD</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>112</Id>
+            <Desc>BENIN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>113</Id>
+            <Desc>EGIPTO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>115</Id>
+            <Desc>GABON</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>116</Id>
+            <Desc>GAMBIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>117</Id>
+            <Desc>GHANA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>118</Id>
+            <Desc>GUINEA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>119</Id>
+            <Desc>GUINEA ECUATORIAL</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>120</Id>
+            <Desc>KENYA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>121</Id>
+            <Desc>LESOTHO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>122</Id>
+            <Desc>LIBERIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>123</Id>
+            <Desc>LIBIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>124</Id>
+            <Desc>MADAGASCAR</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>125</Id>
+            <Desc>MALAWI</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>126</Id>
+            <Desc>MALI</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>127</Id>
+            <Desc>MARRUECOS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>128</Id>
+            <Desc>MAURICIO,ISLAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>129</Id>
+            <Desc>MAURITANIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>130</Id>
+            <Desc>NIGER</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>131</Id>
+            <Desc>NIGERIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>132</Id>
+            <Desc>ZIMBABWE</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>133</Id>
+            <Desc>RWANDA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>134</Id>
+            <Desc>SENEGAL</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>135</Id>
+            <Desc>SIERRA LEONA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>136</Id>
+            <Desc>SOMALIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>137</Id>
+            <Desc>SWAZILANDIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>139</Id>
+            <Desc>TANZANIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>140</Id>
+            <Desc>TOGO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>141</Id>
+            <Desc>TUNEZ</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>142</Id>
+            <Desc>UGANDA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>144</Id>
+            <Desc>ZAMBIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>145</Id>
+            <Desc>TERRIT.VINCULADOS AL R UNIDO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>146</Id>
+            <Desc>TERRIT.VINCULADOS A ESPAÑA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>147</Id>
+            <Desc>TERRIT.VINCULADOS A FRANCIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>149</Id>
+            <Desc>ANGOLA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>150</Id>
+            <Desc>CABO VERDE</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>151</Id>
+            <Desc>MOZAMBIQUE</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>152</Id>
+            <Desc>SEYCHELLES</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>153</Id>
+            <Desc>DJIBOUTI</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>155</Id>
+            <Desc>COMORAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>156</Id>
+            <Desc>GUINEA BISSAU</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>157</Id>
+            <Desc>STO.TOME Y PRINCIPE</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>158</Id>
+            <Desc>NAMIBIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>159</Id>
+            <Desc>SUDAFRICA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>160</Id>
+            <Desc>ERITREA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>161</Id>
+            <Desc>ETIOPIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>162</Id>
+            <Desc>SUDAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>163</Id>
+            <Desc>SUDAN DEL SUR</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>197</Id>
+            <Desc>RESTO (AFRICA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>198</Id>
+            <Desc>INDETERMINADO (AFRICA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>200</Id>
+            <Desc>ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>201</Id>
+            <Desc>BARBADOS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>202</Id>
+            <Desc>BOLIVIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>203</Id>
+            <Desc>BRASIL</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>204</Id>
+            <Desc>CANADA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>205</Id>
+            <Desc>COLOMBIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>206</Id>
+            <Desc>COSTA RICA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>207</Id>
+            <Desc>CUBA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>208</Id>
+            <Desc>CHILE</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>209</Id>
+            <Desc>REPÚBLICA DOMINICANA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>210</Id>
+            <Desc>ECUADOR</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>211</Id>
+            <Desc>EL SALVADOR</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>212</Id>
+            <Desc>ESTADOS UNIDOS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>213</Id>
+            <Desc>GUATEMALA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>214</Id>
+            <Desc>GUYANA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>215</Id>
+            <Desc>HAITI</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>216</Id>
+            <Desc>HONDURAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>217</Id>
+            <Desc>JAMAICA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>218</Id>
+            <Desc>MEXICO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>219</Id>
+            <Desc>NICARAGUA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>220</Id>
+            <Desc>PANAMA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>221</Id>
+            <Desc>PARAGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>222</Id>
+            <Desc>PERU</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>223</Id>
+            <Desc>PUERTO RICO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>224</Id>
+            <Desc>TRINIDAD Y TOBAGO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>225</Id>
+            <Desc>URUGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>226</Id>
+            <Desc>VENEZUELA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>227</Id>
+            <Desc>TERRIT.VINCULADO AL R.UNIDO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>228</Id>
+            <Desc>TER.VINCULADOS A DINAMARCA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>229</Id>
+            <Desc>TERRIT.VINCULADOS A FRANCIA AMERIC.</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>230</Id>
+            <Desc>TERRIT. HOLANDESES</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>231</Id>
+            <Desc>TER.VINCULADOS A ESTADOS UNIDOS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>232</Id>
+            <Desc>SURINAME</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>233</Id>
+            <Desc>DOMINICA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>234</Id>
+            <Desc>SANTA LUCIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>235</Id>
+            <Desc>SAN VICENTE Y LAS GRANADINAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>236</Id>
+            <Desc>BELICE</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>237</Id>
+            <Desc>ANTIGUA Y BARBUDA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>238</Id>
+            <Desc>S.CRISTOBAL Y NEVIS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>239</Id>
+            <Desc>BAHAMAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>240</Id>
+            <Desc>GRENADA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>241</Id>
+            <Desc>ANTILLAS HOLANDESAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>242</Id>
+            <Desc>ARUBA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>250</Id>
+            <Desc>AAE Tierra del Fuego - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>251</Id>
+            <Desc>ZF La Plata - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>252</Id>
+            <Desc>ZF Justo Daract - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>253</Id>
+            <Desc>ZF Río Gallegos - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>254</Id>
+            <Desc>ARGENTINA - ISLAS MALVINAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>255</Id>
+            <Desc>ZF Tucumán - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>256</Id>
+            <Desc>ZF Córdoba - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>257</Id>
+            <Desc>ZF Mendoza - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>258</Id>
+            <Desc>ZF General Pico - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>259</Id>
+            <Desc>ZF Comodoro Rivadavia - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>260</Id>
+            <Desc>ZF Iquique</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>261</Id>
+            <Desc>ZF Punta Arenas</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>262</Id>
+            <Desc>ZF Salta - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>263</Id>
+            <Desc>ZF Paso de los Libres - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>264</Id>
+            <Desc>ZF Puerto Iguazú - ARGENTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>265</Id>
+            <Desc>SECTOR ANTARTICO ARG.</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>270</Id>
+            <Desc>ZF Colón - REPÚBLICA DE PANAMÁ</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>271</Id>
+            <Desc>ZF Winner (Sta. C. de la Sierra) - BOLIVIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>280</Id>
+            <Desc>ZF Colonia - URUGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>281</Id>
+            <Desc>ZF Florida - URUGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>282</Id>
+            <Desc>ZF Libertad - URUGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>283</Id>
+            <Desc>ZF Zonamerica - URUGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>284</Id>
+            <Desc>ZF Nueva Helvecia - URUGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>285</Id>
+            <Desc>ZF Nueva Palmira - URUGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>286</Id>
+            <Desc>ZF Río Negro - URUGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>287</Id>
+            <Desc>ZF Rivera - URUGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>288</Id>
+            <Desc>ZF San José - URUGUAY</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>291</Id>
+            <Desc>ZF Manaos - BRASIL</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>295</Id>
+            <Desc>MAR ARG ZONA ECO.EX</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>296</Id>
+            <Desc>RIOS ARG NAVEG INTER</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>297</Id>
+            <Desc>RESTO AMERICA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>298</Id>
+            <Desc>INDETERMINADO (AMERICA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>301</Id>
+            <Desc>AFGANISTAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>302</Id>
+            <Desc>ARABIA SAUDITA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>303</Id>
+            <Desc>BAHREIN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>304</Id>
+            <Desc>MYANMAR (EX-BIRMANIA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>305</Id>
+            <Desc>BUTAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>306</Id>
+            <Desc>CAMBODYA (EX-KAMPUCHE)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>307</Id>
+            <Desc>SRI LANKA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>308</Id>
+            <Desc>COREA DEMOCRATICA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>309</Id>
+            <Desc>COREA REPUBLICANA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>310</Id>
+            <Desc>CHINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>312</Id>
+            <Desc>FILIPINAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>313</Id>
+            <Desc>TAIWAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>315</Id>
+            <Desc>INDIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>316</Id>
+            <Desc>INDONESIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>317</Id>
+            <Desc>IRAK</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>318</Id>
+            <Desc>IRAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>319</Id>
+            <Desc>ISRAEL</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>320</Id>
+            <Desc>JAPON</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>321</Id>
+            <Desc>JORDANIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>322</Id>
+            <Desc>QATAR</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>323</Id>
+            <Desc>KUWAIT</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>324</Id>
+            <Desc>LAOS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>325</Id>
+            <Desc>LIBANO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>326</Id>
+            <Desc>MALASIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>327</Id>
+            <Desc>MALDIVAS ISLAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>328</Id>
+            <Desc>OMAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>329</Id>
+            <Desc>MONGOLIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>330</Id>
+            <Desc>NEPAL</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>331</Id>
+            <Desc>EMIRATOS ARABES UNIDOS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>332</Id>
+            <Desc>PAKISTÁN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>333</Id>
+            <Desc>SINGAPUR</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>334</Id>
+            <Desc>SIRIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>335</Id>
+            <Desc>THAILANDIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>337</Id>
+            <Desc>VIETNAM</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>341</Id>
+            <Desc>HONG KONG</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>344</Id>
+            <Desc>MACAO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>345</Id>
+            <Desc>BANGLADESH</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>346</Id>
+            <Desc>BRUNEI</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>348</Id>
+            <Desc>REPUBLICA DE YEMEN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>349</Id>
+            <Desc>ARMENIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>350</Id>
+            <Desc>AZERBAIJAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>351</Id>
+            <Desc>GEORGIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>352</Id>
+            <Desc>KAZAJSTAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>353</Id>
+            <Desc>KIRGUIZISTAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>354</Id>
+            <Desc>TAYIKISTAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>355</Id>
+            <Desc>TURKMENISTAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>356</Id>
+            <Desc>UZBEKISTAN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>357</Id>
+            <Desc>ESTADO DE PALESTINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>397</Id>
+            <Desc>RESTO DE ASIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>398</Id>
+            <Desc>INDET.(ASIA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>401</Id>
+            <Desc>ALBANIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>404</Id>
+            <Desc>ANDORRA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>405</Id>
+            <Desc>AUSTRIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>406</Id>
+            <Desc>BELGICA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>407</Id>
+            <Desc>BULGARIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>409</Id>
+            <Desc>DINAMARCA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>410</Id>
+            <Desc>ESPAÑA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>411</Id>
+            <Desc>FINLANDIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>412</Id>
+            <Desc>FRANCIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>413</Id>
+            <Desc>GRECIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>414</Id>
+            <Desc>HUNGRIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>415</Id>
+            <Desc>IRLANDA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>416</Id>
+            <Desc>ISLANDIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>417</Id>
+            <Desc>ITALIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>418</Id>
+            <Desc>LIECHTENSTEIN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>419</Id>
+            <Desc>LUXEMBURGO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>420</Id>
+            <Desc>MALTA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>421</Id>
+            <Desc>MONACO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>422</Id>
+            <Desc>NORUEGA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>423</Id>
+            <Desc>PAISES BAJOS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>424</Id>
+            <Desc>POLONIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>425</Id>
+            <Desc>PORTUGAL</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>426</Id>
+            <Desc>REINO UNIDO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>427</Id>
+            <Desc>RUMANIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>428</Id>
+            <Desc>SAN MARINO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>429</Id>
+            <Desc>SUECIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>430</Id>
+            <Desc>SUIZA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>431</Id>
+            <Desc>VATICANO(SANTA SEDE)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>433</Id>
+            <Desc>POS.BRIT.(EUROPA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>435</Id>
+            <Desc>CHIPRE</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>436</Id>
+            <Desc>TURQUIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>438</Id>
+            <Desc>ALEMANIA,REP.FED.</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>439</Id>
+            <Desc>BIELORRUSIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>440</Id>
+            <Desc>ESTONIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>441</Id>
+            <Desc>LETONIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>442</Id>
+            <Desc>LITUANIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>443</Id>
+            <Desc>MOLDAVIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>444</Id>
+            <Desc>RUSIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>445</Id>
+            <Desc>UCRANIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>446</Id>
+            <Desc>BOSNIA HERZEGOVINA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>447</Id>
+            <Desc>CROACIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>448</Id>
+            <Desc>ESLOVAQUIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>449</Id>
+            <Desc>ESLOVENIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>450</Id>
+            <Desc>MACEDONIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>451</Id>
+            <Desc>REP. CHECA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>453</Id>
+            <Desc>MONTENEGRO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>454</Id>
+            <Desc>SERBIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>497</Id>
+            <Desc>RESTO EUROPA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>498</Id>
+            <Desc>INDET.(EUROPA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>501</Id>
+            <Desc>AUSTRALIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>503</Id>
+            <Desc>NAURU</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>504</Id>
+            <Desc>NUEVA ZELANDIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>505</Id>
+            <Desc>VANATU</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>506</Id>
+            <Desc>SAMOA OCCIDENTAL</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>507</Id>
+            <Desc>TERRITORIO VINCULADOS A AUSTRALIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>508</Id>
+            <Desc>TERRITORIOS VINCULADOS AL R. UNIDO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>509</Id>
+            <Desc>TERRITORIOS VINCULADOS A FRANCIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>510</Id>
+            <Desc>TER VINCULADOS A NUEVA. ZELANDA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>511</Id>
+            <Desc>TER. VINCULADOS A ESTADOS UNIDOS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>512</Id>
+            <Desc>FIJI, ISLAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>513</Id>
+            <Desc>PAPUA NUEVA GUINEA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>514</Id>
+            <Desc>KIRIBATI, ISLAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>515</Id>
+            <Desc>MICRONESIA,EST.FEDER</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>516</Id>
+            <Desc>PALAU</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>517</Id>
+            <Desc>TUVALU</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>518</Id>
+            <Desc>SALOMON,ISLAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>519</Id>
+            <Desc>TONGA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>520</Id>
+            <Desc>MARSHALL,ISLAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>521</Id>
+            <Desc>MARIANAS,ISLAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>597</Id>
+            <Desc>RESTO OCEANIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>598</Id>
+            <Desc>INDET.(OCEANIA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>652</Id>
+            <Desc>ANGUILA (TERRITORIO NO AUTONOMO DEL R. UNIDO)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>653</Id>
+            <Desc>ARUBA (TERRITORIO DE PAISES BAJOS)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>654</Id>
+            <Desc>ISLA DE COOK (TERRITORIO AUTONOMO ASOCIADO A NUEVA ZELANDA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>655</Id>
+            <Desc>PATAU</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>656</Id>
+            <Desc>POLINESIA FRANCESA (TERRITORIO DE ULTRAMAR DE FRANCIA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>659</Id>
+            <Desc>ANTILLAS HOLANDESAS (TERRITORIO DE PAISES BAJOS)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>662</Id>
+            <Desc>ASCENCION</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>663</Id>
+            <Desc>BERMUDAS (TERRITORIO NO AUTONOMO DEL R. UNIDO)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>664</Id>
+            <Desc>CAMPIONE DITALIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>665</Id>
+            <Desc>COLONIA DE GIBRALTAR</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>666</Id>
+            <Desc>GROENLANDIA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>667</Id>
+            <Desc>GUAM (TERRITORIO NO AUTONOMO DE LOS ESTADOS UNIDOS)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>668</Id>
+            <Desc>HONG KONG (TERRITORIO DE CHINA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>669</Id>
+            <Desc>ISLAS AZORES</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>670</Id>
+            <Desc>ISLAS DEL CANAL (GUERNESEY, JERSEY, ALDERNEY, G.STARK, L.SARK, ETC)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>671</Id>
+            <Desc>ISLAS CAIMAN (TERRITORIO NO AUTONOMO DEL R UNIDO)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>672</Id>
+            <Desc>ISLA CHRISTMAS</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>673</Id>
+            <Desc>ISLA DE COCOS O KEELING</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>676</Id>
+            <Desc>ISLA DE MAN (TERRITORIO DEL REINO UNIDO)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>677</Id>
+            <Desc>ISLA DE NORFOLK (TERRITORIO DEL REINO UNIDO)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>678</Id>
+            <Desc>ISLAS TURCAS Y CAICOS (TERRITORIO NO AUTONOMO DEL REINO UNIDO)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>679</Id>
+            <Desc>ISLAS PACIFICO</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>680</Id>
+            <Desc>ISLAS DE SAN PEDRO Y MIGUELON</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>681</Id>
+            <Desc>ISLA QESHM</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>682</Id>
+            <Desc>ISLAS VIRGENES BRITANICAS (TERRITORIO NO AUTONOMO DEL REINO UNIDO)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>683</Id>
+            <Desc>ISLAS VIRGENES DE ESTADOS UNIDOS DE AMERICA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>684</Id>
+            <Desc>LABUAM</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>685</Id>
+            <Desc>MADEIRA (TERRITORIO DE PORTUGAL)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>686</Id>
+            <Desc>MONSERRAT (TERRITORIO NO AUTONOMO DEL REINO UNIDO)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>687</Id>
+            <Desc>NIUE</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>690</Id>
+            <Desc>PITCAIRN</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>693</Id>
+            <Desc>REGIMEN APLICABLE A LAS SA FINANCIERAS (LEY 11073 DE LA ROU)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>694</Id>
+            <Desc>SANTA ELENA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>695</Id>
+            <Desc>SAMOA AMERICANA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>696</Id>
+            <Desc>ARCHIPIELAGO DE SVBALBARD</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>697</Id>
+            <Desc>TRISTAN DA CUNHA</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>698</Id>
+            <Desc>TRIESTE (ITALIA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>699</Id>
+            <Desc>TOKELAU</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>700</Id>
+            <Desc>ZONA LIBRE DE OSTRAVA (CIUDAD DE LA ANTIGUA CHECOSLOVAQUIA)</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>997</Id>
+            <Desc>RESTO CONTINENTE</Desc>
+          </PaisTipo>
+          <PaisTipo>
+            <Id>998</Id>
+            <Desc>INDET.(CONTINENTE)</Desc>
+          </PaisTipo>
+        </ResultGet>
+      </FEParamGetTiposPaisesResult>
+    </FEParamGetTiposPaisesResponse>
+  </soap:Body>
+</soap:Envelope>

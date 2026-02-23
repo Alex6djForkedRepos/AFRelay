@@ -1,0 +1,83 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Header>
+    <FEHeaderInfo xmlns="http://ar.gov.afip.dif.FEV1/">
+      <ambiente>HomologacionExterno - sr2</ambiente>
+      <fecha>2026-02-22T22:45:33.0925697-03:00</fecha>
+      <id>7.0.0.0</id>
+    </FEHeaderInfo>
+  </soap:Header>
+  <soap:Body>
+    <FEParamGetTiposTributosResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+      <FEParamGetTiposTributosResult>
+        <ResultGet>
+          <TributoTipo>
+            <Id>1</Id>
+            <Desc>Impuestos nacionales</Desc>
+            <FchDesde>20100917</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+          <TributoTipo>
+            <Id>2</Id>
+            <Desc>Impuestos provinciales</Desc>
+            <FchDesde>20100917</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+          <TributoTipo>
+            <Id>3</Id>
+            <Desc>Impuestos municipales</Desc>
+            <FchDesde>20100917</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+          <TributoTipo>
+            <Id>4</Id>
+            <Desc>Impuestos Internos</Desc>
+            <FchDesde>20100917</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+          <TributoTipo>
+            <Id>99</Id>
+            <Desc>Otro</Desc>
+            <FchDesde>20100917</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+          <TributoTipo>
+            <Id>5</Id>
+            <Desc>IIBB</Desc>
+            <FchDesde>20170719</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+          <TributoTipo>
+            <Id>6</Id>
+            <Desc>Percepción de IVA</Desc>
+            <FchDesde>20170719</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+          <TributoTipo>
+            <Id>7</Id>
+            <Desc>Percepción de IIBB</Desc>
+            <FchDesde>20170719</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+          <TributoTipo>
+            <Id>8</Id>
+            <Desc>Percepciones por Impuestos Municipales</Desc>
+            <FchDesde>20170719</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+          <TributoTipo>
+            <Id>9</Id>
+            <Desc>Otras Percepciones</Desc>
+            <FchDesde>20170719</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+          <TributoTipo>
+            <Id>13</Id>
+            <Desc>Percepción de IVA a no Categorizado</Desc>
+            <FchDesde>20170719</FchDesde>
+            <FchHasta>NULL</FchHasta>
+          </TributoTipo>
+        </ResultGet>
+      </FEParamGetTiposTributosResult>
+    </FEParamGetTiposTributosResponse>
+  </soap:Body>
+</soap:Envelope>
