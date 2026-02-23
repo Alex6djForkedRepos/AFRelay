@@ -16,6 +16,7 @@ gunicorn==24.1.1
 fastapi==0.115.12
 pydantic==2.11.5
 
+python-dotenv==1.2.1
 apscheduler==3.11.2
 httpx==0.25.2
 zeep==4.3.1
