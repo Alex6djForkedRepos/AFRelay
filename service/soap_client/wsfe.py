@@ -2,6 +2,7 @@ import logging
 from builtins import ConnectionResetError
 
 import httpx
+from lxml import etree
 from tenacity import (before_sleep_log, retry, retry_if_exception_type,
                       stop_after_attempt, wait_fixed)
 from zeep.exceptions import Fault, TransportError, XMLSyntaxError
@@ -23,6 +24,8 @@ async def consult_afip_wsfe(make_request, METHOD: str) -> dict:
         
     try:
         afip_response = await make_request()
+
+        # get_raw_xml_response(METHOD) # Uncomment to log/save raw XML responses from the server
 
         # Zeep returns an object of type '<class 'zeep.objects.[service response]'>'.
         # To work with the returned data, this object needs to be converted into a dictionary using serialize_object().
@@ -53,7 +56,22 @@ async def consult_afip_wsfe(make_request, METHOD: str) -> dict:
     except Exception as e:
         logger.error(f"General exception in {METHOD}: {e}")
         return build_error_response(METHOD, "unknown", str(e))
+    
 
+# Utils ================================
+def get_raw_xml_response(METHOD):
+    manager = WSFEClientManager(afip_wsdl)
+    xml_response = manager.history.last_received
+
+    raw_xml = etree.tostring(
+        xml_response["envelope"],
+        pretty_print=True,
+        encoding="unicode"
+    )
+
+    with open(f"service/soap_client/response_examples/{METHOD}Response.xml", "w") as f:
+        f.write(raw_xml)
+# ======================================
 
 # ===================
 # == HEALTH CHECK ===
