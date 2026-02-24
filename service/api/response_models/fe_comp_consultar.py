@@ -69,6 +69,7 @@ class ResultGet(BaseModel):
     FchVtoPago: str | None = None
     MonId: str
     MonCotiz: float
+    CondicionIVAReceptorId: int
 
     cbtes_asoc: CbtesAsoc | None = Field(None, alias="CbtesAsoc")
     tributos: Tributos | None = Field(None, alias="Tributos")

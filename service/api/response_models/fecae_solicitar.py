@@ -19,6 +19,7 @@ class FECAEDetResponse(BaseModel):
     DocNro: int
     CbteDesde: int
     CbteHasta: int
+    CbteFch: str
     Resultado: str
     CAE: str | None = None
     CAEFchVto: str | None = None
