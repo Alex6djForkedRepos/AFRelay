@@ -18,7 +18,7 @@ class FECAEADetResponse(BaseModel):
     CbteHasta: int
     CbteFch: str | None = None
     Resultado: str | None = None
-    obs: list[Observaciones] = Field(None, alias="Observaciones")
+    obs: list[Observaciones] | None = Field(None, alias="Observaciones")
 
     CAEA: str | None = None
 
@@ -37,7 +37,7 @@ class FeCabResp(BaseModel):
     Resultado: str | None = None
     Reproceso: str | None = None
 
-class FECAEAResponse(BaseModel):
+class FECAEARegInformativoResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
@@ -46,12 +46,6 @@ class FECAEAResponse(BaseModel):
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
-
-class FECAEARegInformativoResult(BaseModel):
-
-    model_config = ConfigDict(populate_by_name=True)
-
-    fecaea_response: FECAEAResponse | None = Field(None, alias="FECAEAResponse")
 
 class FECAEARegInformativoResponse(BaseModel):
     status: str
