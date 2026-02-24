@@ -2,7 +2,7 @@
   <soap:Header>
     <FEHeaderInfo xmlns="http://ar.gov.afip.dif.FEV1/">
       <ambiente>HomologacionExterno - sr2</ambiente>
-      <fecha>2026-02-22T22:14:11.6208212-03:00</fecha>
+      <fecha>2026-02-24T18:13:25.3200322-03:00</fecha>
       <id>7.0.0.0</id>
     </FEHeaderInfo>
   </soap:Header>
@@ -12,10 +12,10 @@
         <FeCabResp>
           <Cuit>30740253022</Cuit>
           <PtoVta>1</PtoVta>
-          <CbteTipo>11</CbteTipo>
-          <FchProceso>20260222221411</FchProceso>
+          <CbteTipo>6</CbteTipo>
+          <FchProceso>20260224181324</FchProceso>
           <CantReg>1</CantReg>
-          <Resultado>R</Resultado>
+          <Resultado>A</Resultado>
           <Reproceso>N</Reproceso>
         </FeCabResp>
         <FeDetResp>
@@ -23,14 +23,25 @@
             <Concepto>1</Concepto>
             <DocTipo>99</DocTipo>
             <DocNro>0</DocNro>
-            <CbteDesde>2</CbteDesde>
-            <CbteHasta>2</CbteHasta>
-            <CbteFch>20260222</CbteFch>
-            <Resultado>R</Resultado>
-            <CAE/>
-            <CAEFchVto/>
+            <CbteDesde>102</CbteDesde>
+            <CbteHasta>102</CbteHasta>
+            <CbteFch>20260224</CbteFch>
+            <Resultado>A</Resultado>
+            <CAE>86080011599612</CAE>
+            <CAEFchVto>20260306</CAEFchVto>
+            <Obs>
+              <Observaciones />
+            </Obs>
           </FECAEDetResponse>
         </FeDetResp>
+
+        <Events>
+          <Evt />
+        </Events>
+        <Errors>
+          <Err />
+        </Errors>
+
       </FECAESolicitarResult>
     </FECAESolicitarResponse>
   </soap:Body>

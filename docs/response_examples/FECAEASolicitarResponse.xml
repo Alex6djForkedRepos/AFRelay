@@ -18,7 +18,18 @@
           <FchVigHasta>20260228</FchVigHasta>
           <FchLimiteInf>20260307</FchLimiteInf> 
           <FchProceso>20260222223015</FchProceso>
+          <Observaciones>
+            <Obs />
+          </Observaciones>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
         </FECAEASolicitarResult>
     </FECAEASolicitarResponse>
   </soap:Body>

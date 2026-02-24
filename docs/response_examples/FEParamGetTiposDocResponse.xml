@@ -48,7 +48,7 @@
           </DocTipo>
           <DocTipo>
             <Id>92</Id>
-            <Desc>en trámite</Desc>
+            <Desc>en trï¿½mite</Desc>
             <FchDesde>20080725</FchDesde>
             <FchHasta>NULL</FchHasta>
           </DocTipo>
@@ -78,7 +78,7 @@
           </DocTipo>
           <DocTipo>
             <Id>0</Id>
-            <Desc>CI Policía Federal</Desc>
+            <Desc>CI Policï¿½a Federal</Desc>
             <FchDesde>20080725</FchDesde>
             <FchHasta>NULL</FchHasta>
           </DocTipo>
@@ -96,7 +96,7 @@
           </DocTipo>
           <DocTipo>
             <Id>3</Id>
-            <Desc>CI Córdoba</Desc>
+            <Desc>CI Cï¿½rdoba</Desc>
             <FchDesde>20080725</FchDesde>
             <FchHasta>NULL</FchHasta>
           </DocTipo>
@@ -108,7 +108,7 @@
           </DocTipo>
           <DocTipo>
             <Id>5</Id>
-            <Desc>CI Entre Ríos</Desc>
+            <Desc>CI Entre Rï¿½os</Desc>
             <FchDesde>20080728</FchDesde>
             <FchHasta>NULL</FchHasta>
           </DocTipo>
@@ -162,7 +162,7 @@
           </DocTipo>
           <DocTipo>
             <Id>14</Id>
-            <Desc>CI Tucumán</Desc>
+            <Desc>CI Tucumï¿½n</Desc>
             <FchDesde>20080728</FchDesde>
             <FchHasta>NULL</FchHasta>
           </DocTipo>
@@ -192,7 +192,7 @@
           </DocTipo>
           <DocTipo>
             <Id>20</Id>
-            <Desc>CI Neuquén</Desc>
+            <Desc>CI Neuquï¿½n</Desc>
             <FchDesde>20080728</FchDesde>
             <FchHasta>NULL</FchHasta>
           </DocTipo>
@@ -204,7 +204,7 @@
           </DocTipo>
           <DocTipo>
             <Id>22</Id>
-            <Desc>CI Río Negro</Desc>
+            <Desc>CI Rï¿½o Negro</Desc>
             <FchDesde>20080728</FchDesde>
             <FchHasta>NULL</FchHasta>
           </DocTipo>
@@ -227,6 +227,14 @@
             <FchHasta>NULL</FchHasta>
           </DocTipo>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FEParamGetTiposDocResult>
     </FEParamGetTiposDocResponse>
   </soap:Body>

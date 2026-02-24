@@ -27,7 +27,12 @@
           <FchVtoPago/>
           <MonId>PES</MonId>
           <MonCotiz>1</MonCotiz>
-          <CondicionIVAReceptorId>5</CondicionIVAReceptorId>
+          <CbtesAsoc>
+            <CbteAsoc />
+          </CbtesAsoc>
+          <Tributos>
+            <Tributo />
+          </Tributos>
           <Iva>
             <AlicIva>
               <Id>5</Id>
@@ -35,14 +40,36 @@
               <Importe>210</Importe>
             </AlicIva>
           </Iva>
+          <Opcionales>
+            <Opcional />
+          </Opcionales>
+          <Compradores>
+            <Comprador />
+          </Compradores>
+          <PeriodoAsoc>
+            <FchDesde />
+            <FchHasta />
+          </PeriodoAsoc>
+          <CondicionIVAReceptorId>5</CondicionIVAReceptorId>
           <Resultado>A</Resultado>
           <CodAutorizacion>75422302377891</CodAutorizacion>
           <EmisionTipo>CAE</EmisionTipo>
           <FchVto>20260105</FchVto>
           <FchProceso>20251226010205</FchProceso>
+          <Observaciones>
+            <Obs />
+          </Observaciones>
           <PtoVta>1</PtoVta>
           <CbteTipo>6</CbteTipo>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FECompConsultarResult>
     </FECompConsultarResponse>
   </soap:Body>

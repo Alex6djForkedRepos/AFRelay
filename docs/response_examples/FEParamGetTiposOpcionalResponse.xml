@@ -12,13 +12,13 @@
         <ResultGet>
           <OpcionalTipo>
             <Id>2</Id>
-            <Desc>RG Empresas Promovidas - Indentificador de proyecto vinculado a Régimen de Promoción Industrial</Desc>
+            <Desc>RG Empresas Promovidas - Indentificador de proyecto vinculado a Rï¿½gimen de Promociï¿½n Industrial</Desc>
             <FchDesde>20100917</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>91</Id>
-            <Desc>RG Bienes Usados 3411 - Nombre y Apellido o Denominación del vendedor del bien usado.</Desc>
+            <Desc>RG Bienes Usados 3411 - Nombre y Apellido o Denominaciï¿½n del vendedor del bien usado.</Desc>
             <FchDesde>20130401</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
@@ -54,37 +54,37 @@
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>7</Id>
-            <Desc>RG 3668 Impuesto al Valor Agregado - Art.12 IVA Carácter del Firmante</Desc>
+            <Desc>RG 3668 Impuesto al Valor Agregado - Art.12 IVA Carï¿½cter del Firmante</Desc>
             <FchDesde>20141016</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>10</Id>
-            <Desc>RG 3.368 Establecimientos de educación pública de gestión privada - Actividad Comprendida</Desc>
+            <Desc>RG 3.368 Establecimientos de educaciï¿½n pï¿½blica de gestiï¿½n privada - Actividad Comprendida</Desc>
             <FchDesde>20150605</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>1011</Id>
-            <Desc>RG 3.368 Establecimientos de educación pública de gestión privada - Tipo de Documento</Desc>
+            <Desc>RG 3.368 Establecimientos de educaciï¿½n pï¿½blica de gestiï¿½n privada - Tipo de Documento</Desc>
             <FchDesde>20150605</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>1012</Id>
-            <Desc>RG 3.368 Establecimientos de educación pública de gestión privada - Número de Documento</Desc>
+            <Desc>RG 3.368 Establecimientos de educaciï¿½n pï¿½blica de gestiï¿½n privada - Nï¿½mero de Documento</Desc>
             <FchDesde>20150605</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>11</Id>
-            <Desc>RG 2.820 Operaciones económicas vinculadas con bienes inmuebles - Actividad Comprendida</Desc>
+            <Desc>RG 2.820 Operaciones econï¿½micas vinculadas con bienes inmuebles - Actividad Comprendida</Desc>
             <FchDesde>20150605</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>12</Id>
-            <Desc>RG 3.687 Locación temporaria de inmuebles con fines turísticos - Actividad Comprendida</Desc>
+            <Desc>RG 3.687 Locaciï¿½n temporaria de inmuebles con fines turï¿½sticos - Actividad Comprendida</Desc>
             <FchDesde>20150605</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
@@ -102,49 +102,49 @@
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>15</Id>
-            <Desc>RG 2.863 Personas físicas que desarrollen actividad de modelaje</Desc>
+            <Desc>RG 2.863 Personas fï¿½sicas que desarrollen actividad de modelaje</Desc>
             <FchDesde>20160101</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>17</Id>
-            <Desc>RG 4004-E Locación de inmuebles destino 'casa-habitación'. Dato 2 (dos) = facturación directa / Dato 1 (uno) = facturación a través de intermediario</Desc>
+            <Desc>RG 4004-E Locaciï¿½n de inmuebles destino 'casa-habitaciï¿½n'. Dato 2 (dos) = facturaciï¿½n directa / Dato 1 (uno) = facturaciï¿½n a travï¿½s de intermediario</Desc>
             <FchDesde>20170309</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>1801</Id>
-            <Desc>RG 4004-E Locación de inmuebles destino 'casa-habitación'. Clave Única de Identificación Tributaria (CUIT).</Desc>
+            <Desc>RG 4004-E Locaciï¿½n de inmuebles destino 'casa-habitaciï¿½n'. Clave ï¿½nica de Identificaciï¿½n Tributaria (CUIT).</Desc>
             <FchDesde>20170309</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>1802</Id>
-            <Desc>RG 4004-E Locación de inmuebles destino 'casa-habitación'. Apellido y nombres, denominación y/o razón social.</Desc>
+            <Desc>RG 4004-E Locaciï¿½n de inmuebles destino 'casa-habitaciï¿½n'. Apellido y nombres, denominaciï¿½n y/o razï¿½n social.</Desc>
             <FchDesde>20170309</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>2101</Id>
-            <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - CBU del Emisor</Desc>
+            <Desc>Factura de Crï¿½dito Electrï¿½nica MiPyMEs (FCE) - CBU del Emisor</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>2102</Id>
-            <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - Alias del Emisor</Desc>
+            <Desc>Factura de Crï¿½dito Electrï¿½nica MiPyMEs (FCE) - Alias del Emisor</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>22</Id>
-            <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - Anulación</Desc>
+            <Desc>Factura de Crï¿½dito Electrï¿½nica MiPyMEs (FCE) - Anulaciï¿½n</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
           <OpcionalTipo>
             <Id>23</Id>
-            <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - Referencia Comercial</Desc>
+            <Desc>Factura de Crï¿½dito Electrï¿½nica MiPyMEs (FCE) - Referencia Comercial</Desc>
             <FchDesde>20190308</FchDesde>
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
@@ -155,6 +155,14 @@
             <FchHasta>NULL</FchHasta>
           </OpcionalTipo>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FEParamGetTiposOpcionalResult>
     </FEParamGetTiposOpcionalResponse>
   </soap:Body>

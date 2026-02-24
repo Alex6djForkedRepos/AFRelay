@@ -52,7 +52,7 @@
           </CondicionIvaReceptor>
           <CondicionIvaReceptor>
             <Id>10</Id>
-            <Desc>IVA Liberado – Ley N° 19.640</Desc>
+            <Desc>IVA Liberado ï¿½ Ley Nï¿½ 19.640</Desc>
             <Cmp_Clase>B/C</Cmp_Clase>
           </CondicionIvaReceptor>
           <CondicionIvaReceptor>
@@ -66,6 +66,14 @@
             <Cmp_Clase>C/49</Cmp_Clase>
           </CondicionIvaReceptor>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FEParamGetCondicionIvaReceptorResult>
     </FEParamGetCondicionIvaReceptorResponse>
   </soap:Body>

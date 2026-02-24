@@ -18,13 +18,13 @@
           </CbteTipo>
           <CbteTipo>
             <Id>2</Id>
-            <Desc>Nota de Débito A</Desc>
+            <Desc>Nota de Dï¿½bito A</Desc>
             <FchDesde>20100917</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>3</Id>
-            <Desc>Nota de Crédito A</Desc>
+            <Desc>Nota de Crï¿½dito A</Desc>
             <FchDesde>20100917</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
@@ -36,13 +36,13 @@
           </CbteTipo>
           <CbteTipo>
             <Id>7</Id>
-            <Desc>Nota de Débito B</Desc>
+            <Desc>Nota de Dï¿½bito B</Desc>
             <FchDesde>20100917</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>8</Id>
-            <Desc>Nota de Crédito B</Desc>
+            <Desc>Nota de Crï¿½dito B</Desc>
             <FchDesde>20100917</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
@@ -126,13 +126,13 @@
           </CbteTipo>
           <CbteTipo>
             <Id>12</Id>
-            <Desc>Nota de Débito C</Desc>
+            <Desc>Nota de Dï¿½bito C</Desc>
             <FchDesde>20110330</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>13</Id>
-            <Desc>Nota de Crédito C</Desc>
+            <Desc>Nota de Crï¿½dito C</Desc>
             <FchDesde>20110330</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
@@ -150,83 +150,91 @@
           </CbteTipo>
           <CbteTipo>
             <Id>51</Id>
-            <Desc>Factura A con Leyenda "Operación Sujeta a Retención"</Desc>
+            <Desc>Factura A con Leyenda "Operaciï¿½n Sujeta a Retenciï¿½n"</Desc>
             <FchDesde>20150522</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>52</Id>
-            <Desc>Nota de Débito A con Leyenda "Operación Sujeta a Retención"</Desc>
+            <Desc>Nota de Dï¿½bito A con Leyenda "Operaciï¿½n Sujeta a Retenciï¿½n"</Desc>
             <FchDesde>20150522</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>53</Id>
-            <Desc>Nota de Crédito A con Leyenda "Operación Sujeta a Retención"</Desc>
+            <Desc>Nota de Crï¿½dito A con Leyenda "Operaciï¿½n Sujeta a Retenciï¿½n"</Desc>
             <FchDesde>20150522</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>54</Id>
-            <Desc>Recibo A con Leyenda "Operación Sujeta a Retención"</Desc>
+            <Desc>Recibo A con Leyenda "Operaciï¿½n Sujeta a Retenciï¿½n"</Desc>
             <FchDesde>20150522</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>201</Id>
-            <Desc>Factura de Crédito electrónica MiPyMEs (FCE) A</Desc>
+            <Desc>Factura de Crï¿½dito electrï¿½nica MiPyMEs (FCE) A</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>202</Id>
-            <Desc>Nota de Débito electrónica MiPyMEs (FCE) A</Desc>
+            <Desc>Nota de Dï¿½bito electrï¿½nica MiPyMEs (FCE) A</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>203</Id>
-            <Desc>Nota de Crédito electrónica MiPyMEs (FCE) A</Desc>
+            <Desc>Nota de Crï¿½dito electrï¿½nica MiPyMEs (FCE) A</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>206</Id>
-            <Desc>Factura de Crédito electrónica MiPyMEs (FCE) B</Desc>
+            <Desc>Factura de Crï¿½dito electrï¿½nica MiPyMEs (FCE) B</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>207</Id>
-            <Desc>Nota de Débito electrónica MiPyMEs (FCE) B</Desc>
+            <Desc>Nota de Dï¿½bito electrï¿½nica MiPyMEs (FCE) B</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>208</Id>
-            <Desc>Nota de Crédito electrónica MiPyMEs (FCE) B</Desc>
+            <Desc>Nota de Crï¿½dito electrï¿½nica MiPyMEs (FCE) B</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>211</Id>
-            <Desc>Factura de Crédito electrónica MiPyMEs (FCE) C</Desc>
+            <Desc>Factura de Crï¿½dito electrï¿½nica MiPyMEs (FCE) C</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>212</Id>
-            <Desc>Nota de Débito electrónica MiPyMEs (FCE) C</Desc>
+            <Desc>Nota de Dï¿½bito electrï¿½nica MiPyMEs (FCE) C</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
           <CbteTipo>
             <Id>213</Id>
-            <Desc>Nota de Crédito electrónica MiPyMEs (FCE) C</Desc>
+            <Desc>Nota de Crï¿½dito electrï¿½nica MiPyMEs (FCE) C</Desc>
             <FchDesde>20181226</FchDesde>
             <FchHasta>NULL</FchHasta>
           </CbteTipo>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FEParamGetTiposCbteResult>
     </FEParamGetTiposCbteResponse>
   </soap:Body>

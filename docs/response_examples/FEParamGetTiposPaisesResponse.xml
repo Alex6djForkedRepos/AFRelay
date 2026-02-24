@@ -176,7 +176,7 @@
           </PaisTipo>
           <PaisTipo>
             <Id>146</Id>
-            <Desc>TERRIT.VINCULADOS A ESPAÑA</Desc>
+            <Desc>TERRIT.VINCULADOS A ESPAï¿½A</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>147</Id>
@@ -284,7 +284,7 @@
           </PaisTipo>
           <PaisTipo>
             <Id>209</Id>
-            <Desc>REPÚBLICA DOMINICANA</Desc>
+            <Desc>REPï¿½BLICA DOMINICANA</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>210</Id>
@@ -432,7 +432,7 @@
           </PaisTipo>
           <PaisTipo>
             <Id>253</Id>
-            <Desc>ZF Río Gallegos - ARGENTINA</Desc>
+            <Desc>ZF Rï¿½o Gallegos - ARGENTINA</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>254</Id>
@@ -440,11 +440,11 @@
           </PaisTipo>
           <PaisTipo>
             <Id>255</Id>
-            <Desc>ZF Tucumán - ARGENTINA</Desc>
+            <Desc>ZF Tucumï¿½n - ARGENTINA</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>256</Id>
-            <Desc>ZF Córdoba - ARGENTINA</Desc>
+            <Desc>ZF Cï¿½rdoba - ARGENTINA</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>257</Id>
@@ -476,7 +476,7 @@
           </PaisTipo>
           <PaisTipo>
             <Id>264</Id>
-            <Desc>ZF Puerto Iguazú - ARGENTINA</Desc>
+            <Desc>ZF Puerto Iguazï¿½ - ARGENTINA</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>265</Id>
@@ -484,7 +484,7 @@
           </PaisTipo>
           <PaisTipo>
             <Id>270</Id>
-            <Desc>ZF Colón - REPÚBLICA DE PANAMÁ</Desc>
+            <Desc>ZF Colï¿½n - REPï¿½BLICA DE PANAMï¿½</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>271</Id>
@@ -516,7 +516,7 @@
           </PaisTipo>
           <PaisTipo>
             <Id>286</Id>
-            <Desc>ZF Río Negro - URUGUAY</Desc>
+            <Desc>ZF Rï¿½o Negro - URUGUAY</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>287</Id>
@@ -524,7 +524,7 @@
           </PaisTipo>
           <PaisTipo>
             <Id>288</Id>
-            <Desc>ZF San José - URUGUAY</Desc>
+            <Desc>ZF San Josï¿½ - URUGUAY</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>291</Id>
@@ -664,7 +664,7 @@
           </PaisTipo>
           <PaisTipo>
             <Id>332</Id>
-            <Desc>PAKISTÁN</Desc>
+            <Desc>PAKISTï¿½N</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>333</Id>
@@ -772,7 +772,7 @@
           </PaisTipo>
           <PaisTipo>
             <Id>410</Id>
-            <Desc>ESPAÑA</Desc>
+            <Desc>ESPAï¿½A</Desc>
           </PaisTipo>
           <PaisTipo>
             <Id>411</Id>
@@ -1195,6 +1195,14 @@
             <Desc>INDET.(CONTINENTE)</Desc>
           </PaisTipo>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FEParamGetTiposPaisesResult>
     </FEParamGetTiposPaisesResponse>
   </soap:Body>

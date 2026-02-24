@@ -47,6 +47,14 @@
             <FchHasta>NULL</FchHasta>
           </IvaTipo>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FEParamGetTiposIvaResult>
     </FEParamGetTiposIvaResponse>
   </soap:Body>

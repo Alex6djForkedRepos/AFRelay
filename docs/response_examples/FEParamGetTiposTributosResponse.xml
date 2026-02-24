@@ -48,13 +48,13 @@
           </TributoTipo>
           <TributoTipo>
             <Id>6</Id>
-            <Desc>Percepción de IVA</Desc>
+            <Desc>Percepciï¿½n de IVA</Desc>
             <FchDesde>20170719</FchDesde>
             <FchHasta>NULL</FchHasta>
           </TributoTipo>
           <TributoTipo>
             <Id>7</Id>
-            <Desc>Percepción de IIBB</Desc>
+            <Desc>Percepciï¿½n de IIBB</Desc>
             <FchDesde>20170719</FchDesde>
             <FchHasta>NULL</FchHasta>
           </TributoTipo>
@@ -72,11 +72,19 @@
           </TributoTipo>
           <TributoTipo>
             <Id>13</Id>
-            <Desc>Percepción de IVA a no Categorizado</Desc>
+            <Desc>Percepciï¿½n de IVA a no Categorizado</Desc>
             <FchDesde>20170719</FchDesde>
             <FchHasta>NULL</FchHasta>
           </TributoTipo>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FEParamGetTiposTributosResult>
     </FEParamGetTiposTributosResponse>
   </soap:Body>

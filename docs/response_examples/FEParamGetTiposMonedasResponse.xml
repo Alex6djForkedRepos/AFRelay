@@ -18,13 +18,13 @@
           </Moneda>
           <Moneda>
             <Id>DOL</Id>
-            <Desc>Dólar Estadounidense</Desc>
+            <Desc>Dï¿½lar Estadounidense</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
           <Moneda>
             <Id>002</Id>
-            <Desc>Dólar Libre EEUU</Desc>
+            <Desc>Dï¿½lar Libre EEUU</Desc>
             <FchDesde>20090416</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
@@ -60,7 +60,7 @@
           </Moneda>
           <Moneda>
             <Id>018</Id>
-            <Desc>Dólar Canadiense</Desc>
+            <Desc>Dï¿½lar Canadiense</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
@@ -78,7 +78,7 @@
           </Moneda>
           <Moneda>
             <Id>023</Id>
-            <Desc>Bolívar Venezolano</Desc>
+            <Desc>Bolï¿½var Venezolano</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
@@ -96,19 +96,19 @@
           </Moneda>
           <Moneda>
             <Id>026</Id>
-            <Desc>Dólar Australiano</Desc>
+            <Desc>Dï¿½lar Australiano</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
           <Moneda>
             <Id>028</Id>
-            <Desc>Florín (Antillas Holandesas)</Desc>
+            <Desc>Florï¿½n (Antillas Holandesas)</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
           <Moneda>
             <Id>029</Id>
-            <Desc>Güaraní</Desc>
+            <Desc>Gï¿½aranï¿½</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
@@ -138,25 +138,25 @@
           </Moneda>
           <Moneda>
             <Id>051</Id>
-            <Desc>Dólar de Hong Kong</Desc>
+            <Desc>Dï¿½lar de Hong Kong</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
           <Moneda>
             <Id>052</Id>
-            <Desc>Dólar de Singapur</Desc>
+            <Desc>Dï¿½lar de Singapur</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
           <Moneda>
             <Id>053</Id>
-            <Desc>Dólar de Jamaica</Desc>
+            <Desc>Dï¿½lar de Jamaica</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
           <Moneda>
             <Id>054</Id>
-            <Desc>Dólar de Taiwan</Desc>
+            <Desc>Dï¿½lar de Taiwan</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
@@ -168,7 +168,7 @@
           </Moneda>
           <Moneda>
             <Id>056</Id>
-            <Desc>Forint (Hungría)</Desc>
+            <Desc>Forint (Hungrï¿½a)</Desc>
             <FchDesde>20090403</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
@@ -222,19 +222,19 @@
           </Moneda>
           <Moneda>
             <Id>043</Id>
-            <Desc>Balboas Panameñas</Desc>
+            <Desc>Balboas Panameï¿½as</Desc>
             <FchDesde>20090415</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
           <Moneda>
             <Id>044</Id>
-            <Desc>Córdoba Nicaragüense</Desc>
+            <Desc>Cï¿½rdoba Nicaragï¿½ense</Desc>
             <FchDesde>20090415</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
           <Moneda>
             <Id>045</Id>
-            <Desc>Dirham Marroquí</Desc>
+            <Desc>Dirham Marroquï¿½</Desc>
             <FchDesde>20090415</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
@@ -258,13 +258,13 @@
           </Moneda>
           <Moneda>
             <Id>062</Id>
-            <Desc>Rupia Hindú</Desc>
+            <Desc>Rupia Hindï¿½</Desc>
             <FchDesde>20090415</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
           <Moneda>
             <Id>063</Id>
-            <Desc>Lempira Hondureña</Desc>
+            <Desc>Lempira Hondureï¿½a</Desc>
             <FchDesde>20090415</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
@@ -300,11 +300,19 @@
           </Moneda>
           <Moneda>
             <Id>NZD</Id>
-            <Desc>Dólar Neozelandes</Desc>
+            <Desc>Dï¿½lar Neozelandes</Desc>
             <FchDesde>20250115</FchDesde>
             <FchHasta>NULL</FchHasta>
           </Moneda>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FEParamGetTiposMonedasResult>
     </FEParamGetTiposMonedasResponse>
   </soap:Body>

@@ -1,0 +1,44 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Header>
+    <FEHeaderInfo xmlns="http://ar.gov.afip.dif.FEV1/">
+      <ambiente>HomologacionExterno - sr2</ambiente>
+      <fecha>2026-02-24T15:52:52.4612503-03:00</fecha>
+      <id>7.0.0.0</id>
+    </FEHeaderInfo>
+  </soap:Header>
+  <soap:Body>
+    <FECAEARegInformativoResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+      <FECAEARegInformativoResult>
+        <FeCabResp>
+          <Cuit>30740253022</Cuit>
+          <PtoVta>1</PtoVta>
+          <CbteTipo>6</CbteTipo>
+          <FchProceso>20260224155252</FchProceso>
+          <CantReg>1</CantReg>
+          <Resultado>A</Resultado>
+          <Reproceso>N</Reproceso>
+        </FeCabResp>
+        <FeDetResp>
+          <FECAEADetResponse>
+            <Concepto>1</Concepto>
+            <DocTipo>99</DocTipo>
+            <DocNro>0</DocNro>
+            <CbteDesde>1</CbteDesde>
+            <CbteHasta>1</CbteHasta>
+            <CbteFch>20260224</CbteFch>
+            <Resultado>A</Resultado>
+            <CAEA>87080030400901</CAEA>
+          </FECAEADetResponse>
+        </FeDetResp>
+        
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
+      </FECAEARegInformativoResult>
+    </FECAEARegInformativoResponse>
+  </soap:Body>
+</soap:Envelope>

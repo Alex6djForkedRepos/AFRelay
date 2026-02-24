@@ -14,6 +14,14 @@
           <MonCotiz>1130.034</MonCotiz>
           <FchCotiz>20260222</FchCotiz>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FEParamGetCotizacionResult>
     </FEParamGetCotizacionResponse>
   </soap:Body>

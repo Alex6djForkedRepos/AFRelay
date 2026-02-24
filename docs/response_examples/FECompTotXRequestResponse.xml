@@ -2,17 +2,23 @@
   <soap:Header>
     <FEHeaderInfo xmlns="http://ar.gov.afip.dif.FEV1/">
       <ambiente>HomologacionExterno - sr2</ambiente>
-      <fecha>2026-02-22T22:21:03.2621518-03:00</fecha>
+      <fecha>2026-02-22T22:20:49.5433818-03:00</fecha>
       <id>7.0.0.0</id>
     </FEHeaderInfo>
   </soap:Header>
   <soap:Body>
-    <FECompUltimoAutorizadoResponse xmlns="http://ar.gov.afip.dif.FEV1/">
-      <FECompUltimoAutorizadoResult>
-        <PtoVta>1</PtoVta>
-        <CbteTipo>6</CbteTipo>
-        <CbteNro>101</CbteNro>
-      </FECompUltimoAutorizadoResult>
-    </FECompUltimoAutorizadoResponse>
+    <FECompTotXRequestResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+      <FECompTotXRequestResult>
+        <RegXReq>250</RegXReq>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
+      </FECompTotXRequestResult>
+    </FECompTotXRequestResponse>
   </soap:Body>
 </soap:Envelope>

@@ -29,6 +29,14 @@
             <FchHasta>NULL</FchHasta>
           </ConceptoTipo>
         </ResultGet>
+
+        <Errors>
+          <Err />
+        </Errors>
+        <Events>
+          <Evt />
+        </Events>
+
       </FEParamGetTiposConceptoResult>
     </FEParamGetTiposConceptoResponse>
   </soap:Body>
