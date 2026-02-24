@@ -27,8 +27,8 @@ class Errors(BaseModel):
     Err: list[Err]
 
 class FECAEASinMov(BaseModel):
-    CAEA: str | None = None
-    FchProceso: str | None = None
+    CAEA: str
+    FchProceso: str
     PtoVta: int
 
 ######### Infrastructure #########
