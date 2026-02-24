@@ -8,6 +8,9 @@ class Observaciones(BaseModel):
     Msg: str | None = None
 
 class FECAEADetResponse(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+
     Concepto: int
     DocTipo: int
     DocNro: int
