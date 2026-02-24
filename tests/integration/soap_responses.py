@@ -23,36 +23,34 @@ loginCmsResponse = """<?xml version='1.0' encoding='UTF-8'?>
 """
 
 FECAESolicitarResponse = """<?xml version="1.0" encoding="utf-8"?>
-<soap-env:Envelope
-    xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
-    xmlns:ar="http://ar.gov.afip.dif.FEV1/">
-    <soap-env:Header/>
-    <soap-env:Body>
-        <ar:FECAESolicitarResponse>
-            <ar:FECAESolicitarResult>
-                <ar:FeCabResp>
-                    <ar:Cuit>30740253022</ar:Cuit>
-                    <ar:PtoVta>1</ar:PtoVta>
-                    <ar:CbteTipo>6</ar:CbteTipo>
-                    <ar:FchProceso>20251226123045</ar:FchProceso>
-                    <ar:CantReg>1</ar:CantReg>
-                    <ar:Resultado>A</ar:Resultado>
-                </ar:FeCabResp>
-                <ar:FeDetResp>
-                    <ar:FECAEDetResponse>
-                        <ar:Concepto>1</ar:Concepto>
-                        <ar:DocTipo>99</ar:DocTipo>
-                        <ar:DocNro>0</ar:DocNro>
-                        <ar:CbteDesde>2</ar:CbteDesde>
-                        <ar:CbteHasta>2</ar:CbteHasta>
-                        <ar:CbteFch>20260222</CbteFch>
-                        <ar:Resultado>A</ar:Resultado>
-                    </ar:FECAEDetResponse>
-                </ar:FeDetResp>
-            </ar:FECAESolicitarResult>
-        </ar:FECAESolicitarResponse>
-    </soap-env:Body>
-</soap-env:Envelope>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header/>
+    <soap:Body>
+        <FECAESolicitarResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>30740253022</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                    <FchProceso>20251226123045</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>A</Resultado>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>99</DocTipo>
+                        <DocNro>0</DocNro>
+                        <CbteDesde>2</CbteDesde>
+                        <CbteHasta>2</CbteHasta>
+                        <CbteFch>20260222</CbteFch>
+                        <Resultado>A</Resultado>
+                    </FECAEDetResponse>
+                </FeDetResp>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
 """
 
 FECompTotXRequestResponse = """<?xml version="1.0" encoding="utf-8"?>
