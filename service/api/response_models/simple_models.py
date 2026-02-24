@@ -1,8 +1,8 @@
 from pydantic import BaseModel, ConfigDict, Field
 
 from service.api.response_models.common import (Errors, Events,
-                                                FECAEAGetResponse,
-                                                FECAEASinMov)
+                                                
+                                                FECAEASinMov, Observaciones)
 
 # ========================================================
 
@@ -38,6 +38,36 @@ class FECompUltimoAutorizadoResponse(BaseModel):
 
 # ========================================================
 
+class ResultGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+
+    CAEA: str | None = None
+    Periodo: int
+    Orden: int
+    FchVto: str | None = None
+    FchVigDesde: str | None = None
+    FchVigHasta: str | None = None
+    FchLimiteInf: str | None = None
+    FchProceso: str | None = None
+
+    observaciones: Observaciones | None = Field(None, alias="Observaciones")
+
+class FECAEASolicitarResult(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
+
+    events: Events | None = Field(None, alias="Events")
+    errors: Errors | None = Field(None, alias="Errors")
+
+class FECAEASolicitarResponse(BaseModel):
+    status: str
+    response: FECAEASolicitarResult
+
+# ========================================================
+
 class FECAEASinMovimientoConsultarResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
@@ -68,11 +98,26 @@ class FECAEASinMovimientoInformarResponse(BaseModel):
 
 # ========================================================
 
+class ResultGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+
+    CAEA: str | None = None
+    Periodo: int
+    Orden: int
+    FchVto: str | None = None
+    FchVigDesde: str | None = None
+    FchVigHasta: str | None = None
+    FchLimiteInf: str | None = None
+    FchProceso: str | None = None
+
+    observaciones: Observaciones | None = Field(None, alias="Observaciones")
+
 class FECAEAConsultarResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    fecaea_get_response: FECAEAGetResponse | None = Field(None, alias="FECAEAGetResponse")
+    fecaea_get_response: ResultGet | None = Field(None, alias="ResultGet")
 
 class FECAEAConsultarResponse(BaseModel):
     status: str 
@@ -106,11 +151,17 @@ class TributoTipo(BaseModel):
     FchDesde: str | None = None
     FchHasta: str | None = None
 
-class FEParamGetTiposTributosResult(BaseModel):
+class ResultGet(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
     tributo_tipo: list[TributoTipo] | None = Field(None, alias="TributoTipo")
+
+class FEParamGetTiposTributosResult(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -127,11 +178,17 @@ class Moneda(BaseModel):
     FchDesde: str | None = None
     FchHasta: str | None = None
 
+class ResultGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+    
+    moneda: list[Moneda] | None = Field(None, alias="Moneda")
+
 class FEParamGetTiposMonedasResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    moneda: list[Moneda] | None = Field(None, alias="Moneda")
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -148,11 +205,17 @@ class IvaTipo(BaseModel):
     FchDesde: str | None = None
     FchHasta: str | None = None
 
+class ResultGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+    
+    iva_tipo: list[IvaTipo] | None = Field(None, alias="IvaTipo")
+
 class FEParamGetTiposIvaResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    iva_tipo: list[IvaTipo] | None = Field(None, alias="IvaTipo")
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -169,11 +232,17 @@ class OpcionalTipo(BaseModel):
     FchDesde: str | None = None
     FchHasta: str | None = None
 
+class ResultGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+    
+    opcional_tipo: list[OpcionalTipo] | None = Field(None, alias="OpcionalTipo")
+
 class FEParamGetTiposOpcionalResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    opcional_tipo: list[OpcionalTipo] | None = Field(None, alias="OpcionalTipo")
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -190,11 +259,17 @@ class ConceptoTipo(BaseModel):
     FchDesde: str | None = None
     FchHasta: str | None = None
 
-class FEParamGetTiposConceptoResult(BaseModel):
+class ResultGet(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
     concepto_tipo: list[ConceptoTipo] | None = Field(None, alias="ConceptoTipo")
+
+class FEParamGetTiposConceptoResult(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -232,11 +307,17 @@ class CbteTipo(BaseModel):
     FchDesde: str | None = None
     FchHasta: str | None = None
 
+class ResultGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+    
+    cbte_tipo: list[CbteTipo] | None = Field(None, alias="CbteTipo")
+
 class FEParamGetTiposCbteResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    cbte_tipo: list[CbteTipo] | None = Field(None, alias="CbteTipo")
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -252,11 +333,17 @@ class CondicionIvaReceptor(BaseModel):
     Desc: str | None = None
     Cpm_Clase: str | None = None
 
+class ResultGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+    
+    condicion_iva_receptor: list[CondicionIvaReceptor] | None = Field(None, alias="CondicionIvaReceptor")
+
 class FEParamGetCondicionIvaReceptorResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    condicion_iva_receptor: list[CondicionIvaReceptor] | None = Field(None, alias="CondicionIvaReceptor")
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -273,11 +360,17 @@ class DocTipo(BaseModel):
     FchDesde: str | None = None
     FchHasta: str | None = None
 
+class ResultGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+    
+    doc_tipo: list[DocTipo] | None = Field(None, alias="DocTipo")
+
 class FEParamGetTiposDocResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    doc_tipo: list[DocTipo] | None = Field(None, alias="DocTipo")
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -292,11 +385,17 @@ class PaisTipo(BaseModel):
     Id: int
     Desc: str | None = None
 
+class ResultGet(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+    
+    pais_tipo: list[PaisTipo] | None = Field(None, alias="PaisTipo")
+
 class FEParamGetTiposPaisesResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    pais_tipo: list[PaisTipo] | None = Field(None, alias="PaisTipo")
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
