@@ -19,8 +19,6 @@ from service.api.response_models.fe_comp_consultar import \
 from service.api.response_models.fecae_solicitar import FECAESolicitarResponse
 from service.api.response_models.fecaea_reg_informativo import \
     FECAEARegInformativoResponse
-from service.api.response_models.fecaea_solicitar import \
-    FECAEASolicitarResponse
 from service.payload_builder.builder import add_auth_to_payload
 from service.soap_client.async_client import WSFEClientManager
 from service.soap_client.wsdl.wsdl_manager import get_wsfe_wsdl
@@ -34,7 +32,7 @@ afip_wsdl = get_wsfe_wsdl()
 
 
 @router.post("/wsfe/FECAESolicitar", response_model=FECAESolicitarResponse | APIErrorResponseModel)
-async def fecae_solicitar(data: FECAESolicitar ,jwt = Depends(verify_token)) -> dict:
+async def fecae_solicitar(data: FECAESolicitar, jwt = Depends(verify_token)) -> dict:
     
     logger.info("Received request to generate invoice at /wsfe/FECAESolicitar")
 
@@ -117,7 +115,7 @@ async def fecaea_reg_informativo(data: FECAEARegInformativo, jwt = Depends(verif
     return result
 
 
-@router.post("/wsfe/FECAEASolicitar", response_model=FECAEASolicitarResponse | APIErrorResponseModel)
+@router.post("/wsfe/FECAEASolicitar", response_model = simple_models.FECAEASolicitarResponse | APIErrorResponseModel)
 async def fecaea_solicitar(data: FECAEASolicitar, jwt = Depends(verify_token)) -> dict:
 
     data = data.model_dump(by_alias=True, exclude_none=True)
