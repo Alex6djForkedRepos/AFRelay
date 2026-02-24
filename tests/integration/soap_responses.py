@@ -45,6 +45,7 @@ FECAESolicitarResponse = """<?xml version="1.0" encoding="utf-8"?>
                         <ar:DocNro>0</ar:DocNro>
                         <ar:CbteDesde>2</ar:CbteDesde>
                         <ar:CbteHasta>2</ar:CbteHasta>
+                        <ar:CbteFch>20260222</CbteFch>
                         <ar:Resultado>A</ar:Resultado>
                     </ar:FECAEDetResponse>
                 </ar:FeDetResp>
@@ -106,7 +107,8 @@ FECompConsultarResponse = """<?xml version="1.0" encoding="UTF-8"?>
                     <ImpIVA>21.00</ImpIVA>
                     <MonId>PES</MonId>
                     <MonCotiz>1.000</MonCotiz>
-                    
+                    <CondicionIVAReceptorId>5</CondicionIVAReceptorId>
+
                     <Resultado>A</Resultado>
                     <CodAutorizacion>74123456789012</CodAutorizacion>
                     <EmisionTipo>CAE</EmisionTipo>
