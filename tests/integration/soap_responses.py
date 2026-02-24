@@ -59,11 +59,11 @@ FECompTotXRequestResponse = """<?xml version="1.0" encoding="utf-8"?>
     xmlns:ar="http://ar.gov.afip.dif.FEV1/">
     <soap-env:Header/>
     <soap-env:Body>
-        <ar:FECompTotXRequestResponse>
+        <FECompTotXRequestResponse>
             <FECompTotXRequestResult>
                 <RegXReq>1</RegXReq>
             </FECompTotXRequestResult>
-        </ar:FECompTotXRequestResponse>
+        </FECompTotXRequestResponse>
     </soap-env:Body>
 </soap-env:Envelope>
 """
@@ -74,13 +74,13 @@ FeCompUltimoAutorizadoResponse = """<?xml version="1.0" encoding="utf-8"?>
     xmlns:ar="http://ar.gov.afip.dif.FEV1/">
     <soap-env:Header/>
     <soap-env:Body>
-        <ar:FECompUltimoAutorizadoResponse>
-            <ar:FECompUltimoAutorizadoResult>
-                <ar:PtoVta>1</ar:PtoVta>
-                <ar:CbteTipo>6</ar:CbteTipo>
-                <ar:CbteNro>1548</ar:CbteNro>
-            </ar:FECompUltimoAutorizadoResult>
-        </ar:FECompUltimoAutorizadoResponse>
+        <FECompUltimoAutorizadoResponse>
+            <FECompUltimoAutorizadoResult>
+                <PtoVta>1</PtoVta>
+                <CbteTipo>6</CbteTipo>
+                <CbteNro>1548</CbteNro>
+            </FECompUltimoAutorizadoResult>
+        </FECompUltimoAutorizadoResponse>
     </soap-env:Body>
 </soap-env:Envelope>
 """
