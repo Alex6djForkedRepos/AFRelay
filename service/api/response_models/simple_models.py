@@ -57,7 +57,7 @@ class FECAEASolicitarResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    result_get: ResultGet | None = Field(None, alias="ResultGet")
+    result_get: ResultGet | None = Field(..., alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -68,11 +68,14 @@ class FECAEASolicitarResponse(BaseModel):
 
 # ========================================================
 
+class ResultGet(BaseModel):
+    fecaea_sin_mov: list[FECAEASinMov] | None = Field(None, alias="FECAEASinMov")
+
 class FECAEASinMovimientoConsultarResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    fecaea_sin_mov: list[FECAEASinMov] | None = Field(None, alias="FECAEASinMov")
+    result_get: list[ResultGet] | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -286,11 +289,17 @@ class PtoVenta(BaseModel):
     Bloqueado: str | None = None
     FchBaja: str | None = None
 
-class FEParamGetPtosVentaResult(BaseModel):
+class ResultGet(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
     pto_venta: list[PtoVenta] | None = Field(None, alias="PtoVenta")
+
+class FEParamGetPtosVentaResult(BaseModel):
+
+    model_config = ConfigDict(populate_by_name=True)
+
+    result_get: list[ResultGet] | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -411,11 +420,14 @@ class ActividadesTipo(BaseModel):
     Orden: int
     Desc: str | None = None
 
+class ResultGet(BaseModel):
+    actividades_tipo: list[ActividadesTipo] | None = Field(None, alias="ActividadesTipo")
+
 class FEParamGetActividadesResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    actividades_tipo: list[ActividadesTipo] | None = Field(None, alias="ActividadesTipo")
+    result_get: list[ResultGet] | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
