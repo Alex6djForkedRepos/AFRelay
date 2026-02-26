@@ -1,8 +1,7 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-from service.api.response_models.common import (Errors, Events,
-                                                
-                                                FECAEASinMov, Observaciones)
+from service.api.response_models.common import (Errors, Events, FECAEASinMov,
+                                                Observaciones)
 
 # ========================================================
 
