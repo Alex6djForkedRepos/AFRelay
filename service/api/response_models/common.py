@@ -28,8 +28,8 @@ class Errors(BaseModel):
 
 class FECAEASinMov(BaseModel):
     CAEA: str
-    PtoVta: int
     FchProceso: str
+    PtoVta: int
 
 ######### Infrastructure #########
 class ErrorDetails(BaseModel):
