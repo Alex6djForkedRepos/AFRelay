@@ -154,3 +154,26 @@ FECAEARegInformativoResponse = """<?xml version="1.0" encoding="utf-8"?>
     </soap-env:Body>
 </soap-env:Envelope>
 """
+
+FECAEASolicitarResponse = """<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope 
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <FECAEASolicitarResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+        <FECAEASolicitarResult>
+            <ResultGet>
+            <CAEA>87080030400901</CAEA> 
+            <Periodo>202602</Periodo>
+            <Orden>2</Orden>
+            <FchVigDesde>20260216</FchVigDesde>
+            <FchVigHasta>20260228</FchVigHasta>
+            <FchProceso>20260222223015</FchProceso>
+            </ResultGet>
+            </FECAEASolicitarResult>
+        </FECAEASolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+"""
+
