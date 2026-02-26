@@ -104,4 +104,4 @@ async def test_fecaea_reg_informativo_error(client: AsyncClient, wsfe_httpserver
 
     assert resp.status_code == 200
     data = resp.json()
-    assert data["status"] == "error"
+    assert data["error"]["error_type"] == "HTTP Error"

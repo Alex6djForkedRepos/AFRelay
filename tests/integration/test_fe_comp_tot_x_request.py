@@ -48,4 +48,4 @@ async def test_fe_comp_tot_x_error(client: AsyncClient, wsfe_httpserver_fixed_po
     resp = await client.post("/wsfe/FECompTotXRequest", json=payload)
     assert resp.status_code == 200
     data = resp.json()
-    assert data["status"] == "error"
+    assert data["error"]["error_type"] == "HTTP Error"

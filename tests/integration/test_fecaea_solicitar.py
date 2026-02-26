@@ -52,4 +52,4 @@ async def test_fecaea_solicitar_error(client: AsyncClient, wsfe_httpserver_fixed
 
     assert resp.status_code == 200
     data = resp.json()
-    assert data["status"] == "error"
+    assert data["error"]["error_type"] == "HTTP Error"
