@@ -167,8 +167,10 @@ FECAEASolicitarResponse = """<?xml version="1.0" encoding="utf-8"?>
                     <CAEA>87080030400901</CAEA> 
                     <Periodo>202602</Periodo>
                     <Orden>2</Orden>
+                    <FchVto>20260305</FchVto>
                     <FchVigDesde>20260216</FchVigDesde>
                     <FchVigHasta>20260228</FchVigHasta>
+                    <FchLimiteInf>20260307</FchLimiteInf>
                     <FchProceso>20260222223015</FchProceso>
                 </ResultGet>
             </FECAEASolicitarResult>
@@ -177,3 +179,23 @@ FECAEASolicitarResponse = """<?xml version="1.0" encoding="utf-8"?>
 </soap:Envelope>
 """
 
+FECAEASinMovimientoConsultarResponse = """<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope 
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <FECAEASinMovimientoConsultarResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEASinMovimientoConsultarResult>
+                <ResultGet>
+                    <FECAEASinMov>
+                        <CAEA>87080030400901</CAEA>
+                        <PtoVta>1</PtoVta>
+                        <FchProceso>20260224</FchProceso>
+                    </FECAEASinMov>
+                </ResultGet>
+            </FECAEASinMovimientoConsultarResult>
+        </FECAEASinMovimientoConsultarResponse>
+    </soap:Body>
+</soap:Envelope>
+"""
