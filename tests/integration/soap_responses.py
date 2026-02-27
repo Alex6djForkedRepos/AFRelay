@@ -167,10 +167,8 @@ FECAEASolicitarResponse = """<?xml version="1.0" encoding="utf-8"?>
                     <CAEA>87080030400901</CAEA> 
                     <Periodo>202602</Periodo>
                     <Orden>2</Orden>
-                    <FchVto>20260305</FchVto>
                     <FchVigDesde>20260216</FchVigDesde>
                     <FchVigHasta>20260228</FchVigHasta>
-                    <FchLimiteInf>20260307</FchLimiteInf>
                     <FchProceso>20260222223015</FchProceso>
                 </ResultGet>
             </FECAEASolicitarResult>
