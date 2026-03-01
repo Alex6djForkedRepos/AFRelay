@@ -42,4 +42,5 @@ EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:8000/health/liveness || exit 1
 
+# Recommended: 1 worker. More than 1 worker isn't supported because of architectural limitations, which will be fixed in the future.
 CMD ["gunicorn", "-w", "1", "-k", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "--access-logfile", "-", "--error-logfile", "-", "service.api.app:app"]
