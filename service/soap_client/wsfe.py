@@ -69,7 +69,7 @@ def get_raw_xml_response(METHOD):
         encoding="unicode"
     )
 
-    with open(f"service/soap_client/response_examples/{METHOD}Response.xml", "w") as f:
+    with open(f"docs/response_examples/{METHOD}Response.xml", "w") as f:
         f.write(raw_xml)
 # ======================================
 
