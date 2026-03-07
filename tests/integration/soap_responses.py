@@ -179,8 +179,10 @@ FECAEASolicitarResponse = """<?xml version="1.0" encoding="utf-8"?>
                     <CAEA>87080030400901</CAEA> 
                     <Periodo>202602</Periodo>
                     <Orden>2</Orden>
+                    <FchVto>20260305</FchVto> 
                     <FchVigDesde>20260216</FchVigDesde>
                     <FchVigHasta>20260228</FchVigHasta>
+                    <FchLimiteInf>20260307</FchLimiteInf> 
                     <FchProceso>20260222223015</FchProceso>
                 </ResultGet>
             </FECAEASolicitarResult>
@@ -210,3 +212,150 @@ FECAEASinMovimientoConsultarResponse = """<?xml version="1.0" encoding="utf-8"?>
 </soap:Envelope>
 """
 
+FECAEASinMovimientoInformarResponse = """<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope 
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+            <FECAEASinMovimientoInformarResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+                <FECAEASinMovimientoInformarResult>
+                    <CAEA>87080030400901</CAEA>
+                    <FchProceso>20260224</FchProceso>
+                    <PtoVta>1</PtoVta>
+                    <Resultado>A</Resultado>
+                </FECAEASinMovimientoInformarResult>
+            </FECAEASinMovimientoInformarResponse>
+        </soap:Body>
+    </soap:Envelope>
+"""
+
+FECAEAConsultarResponse = """<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope 
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <FECAEAConsultarResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEAConsultarResult>
+                <ResultGet>
+                    <CAEA>87080030400901</CAEA>
+                    <Periodo>202602</Periodo>
+                    <Orden>2</Orden>
+                    <FchVigDesde>20260216</FchVigDesde>
+                    <FchVigHasta>20260228</FchVigHasta>
+                    <FchTopeInf>20260305</FchTopeInf>
+                    <FchProceso>20260222005406</FchProceso>
+                    <Observaciones>
+                        <Obs>
+                            <Code>2</Code>
+                            <Msg>string</Msg>
+                        </Obs>
+                    </Observaciones>
+                </ResultGet>
+            </FECAEAConsultarResult>
+        </FECAEAConsultarResponse>
+    </soap:Body>
+</soap:Envelope>
+"""
+
+FEParamGetCotizacionResponse = """<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope 
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <FEParamGetCotizacionResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FEParamGetCotizacionResult>
+                <ResultGet>
+                    <MonId>DOL</MonId>
+                    <MonCotiz>1130.034</MonCotiz>
+                    <FchCotiz>20260222</FchCotiz>
+                </ResultGet>
+            </FEParamGetCotizacionResult>
+        </FEParamGetCotizacionResponse>
+    </soap:Body>
+</soap:Envelope>
+"""
+
+FEParamGetTiposTributosResponse = """<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope 
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <FEParamGetTiposTributosResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FEParamGetTiposTributosResult>
+                <ResultGet>
+                    <TributoTipo>
+                        <Id>1</Id>
+                        <Desc>Impuestos nacionales</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>2</Id>
+                        <Desc>Impuestos provinciales</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>3</Id>
+                        <Desc>Impuestos municipales</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>4</Id>
+                        <Desc>Impuestos Internos</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>99</Id>
+                        <Desc>Otro</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>5</Id>
+                        <Desc>IIBB</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>6</Id>
+                        <Desc>Percepci�n de IVA</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>7</Id>
+                        <Desc>Percepci�n de IIBB</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>8</Id>
+                        <Desc>Percepciones por Impuestos Municipales</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>9</Id>
+                        <Desc>Otras Percepciones</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>13</Id>
+                        <Desc>Percepci�n de IVA a no Categorizado</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                </ResultGet>
+            </FEParamGetTiposTributosResult>
+        </FEParamGetTiposTributosResponse>
+    </soap:Body>
+</soap:Envelope>
+"""
