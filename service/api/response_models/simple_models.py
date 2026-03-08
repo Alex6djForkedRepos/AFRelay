@@ -283,7 +283,7 @@ class FEParamGetTiposConceptoResponse(BaseModel):
 # ========================================================
 
 class PtoVenta(BaseModel):
-    Id: int
+    Nro: int
     EmisionTipo: str | None = None
     Bloqueado: str | None = None
     FchBaja: str | None = None
@@ -298,7 +298,7 @@ class FEParamGetPtosVentaResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    result_get: list[ResultGet] | None = Field(None, alias="ResultGet")
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
@@ -426,7 +426,7 @@ class FEParamGetActividadesResult(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    result_get: list[ResultGet] | None = Field(None, alias="ResultGet")
+    result_get: ResultGet | None = Field(None, alias="ResultGet")
 
     events: Events | None = Field(None, alias="Events")
     errors: Errors | None = Field(None, alias="Errors")
