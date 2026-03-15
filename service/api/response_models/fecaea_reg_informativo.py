@@ -18,7 +18,7 @@ class FECAEADetResponse(BaseModel):
     CbteHasta: int
     CbteFch: str | None = None
     Resultado: str | None = None
-    obs: list[Observaciones] | None = Field(None, alias="Observaciones")
+    obs: list[Observaciones] | None = Field(None, alias="Obs")
 
     CAEA: str | None = None
 
