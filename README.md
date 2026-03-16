@@ -33,6 +33,11 @@ Once authenticated, the authentication web service will provide two credentials:
 - A private key with the extension "```.key```"
 - An X.509 certificate with the extension "```.pem```"
 
+They are used to sign the `loginTicketResponse.xml` file (TA), which returns an access token for the WSFE (Electronic Invoicing Web Service).
+Once the necessary files have been obtained, they can be placed in the following directories depending on your infrastructure:
+* `host_certs/`: For Docker environments.
+* `src/shared/app_certs/`: For non-Docker setups.
+
 ### Quick start with Docker
 
 1. Clone the repository
@@ -47,9 +52,9 @@ Once authenticated, the authentication web service will provide two credentials:
   ```bash
   docker compose up
   ```
-4. Health Check readiness:
+4. Health Check liveness:
   ```bash
-  curl -i http://localhost:8000/health/readiness
+  curl -i http://localhost:8000/health/liveness
   ```
 5. See OpenAPI docs
   ```bash
@@ -74,11 +79,11 @@ Once authenticated, the authentication web service will provide two credentials:
   ```
 4. Startup FastAPI
   ```bash
-  uvicorn service.api.app:app --reload
+  uvicorn src.shared.main:app --reload
   ```
-5. Health Check readiness:
+5. Health Check liveness:
   ```bash
-  curl -i http://127.0.0.1:8000/health/readiness
+  curl -i http://127.0.0.1:8000/health/liveness
   ```
 6. See OpenAPI docs
   ```bash
@@ -92,16 +97,6 @@ Once authenticated, the authentication web service will provide two credentials:
   pytest -v --cov
   ```
 
-- Unit tests:
-  ```bash
-  pytest tests/unit -v --cov
-  ```
-
-- Integration tests:
-  ```bash
-  pytest tests/integration -v --cov
-  ```
-
 ### Additional Considerations
 
 - **Access ticket persistence:**
@@ -113,22 +108,15 @@ Once authenticated, the authentication web service will provide two credentials:
 ### Architecture
 
   ```text
-  AFRelay
+  AFRelay/
   ├── .github/
-  ├── config/
   ├── docs/
   ├── host_certs/
   ├── host_xml/
-  ├── service/
-  │   ├── api/
-  │   ├── app_certs/
-  │   ├── controllers/
-  │   ├── crypto/
-  │   ├── payload_builder/
-  │   ├── soap_client/
-  │   ├── time/
-  │   ├── utils/
-  │   └── xml_management/
+  ├── src/
+  │   ├── shared/
+  │   ├── wsaa/
+  │   └── wsfev1/
   ├── tests/
   ├── requirements-dev.txt
   └── requirements.txt

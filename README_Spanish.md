@@ -35,7 +35,7 @@ Una vez autenticado, el servicio web de autenticación entregará dos credencial
 Se utilizan para firmar el archivo XML llamado loginTicketResponse.xml (TA), el cual devuelve un token de acceso al WSFE (Web Service Facturación Electrónica).  
 Una vez obtenidos los archivos necesarios, se pueden colocar en las siguientes carpetas dependiendo de la infraestructura:
 - ```host_certs/``` para Docker.
-- ```service/app_certs``` para usar el servicio sin Docker.
+- ```src/shared/app_certs/``` para usar el servicio sin Docker.
 
 ### Quick start con Docker
 
@@ -51,9 +51,9 @@ Una vez obtenidos los archivos necesarios, se pueden colocar en las siguientes c
   ```bash
   docker compose up
   ```
-4. Health Check readiness:
+4. Health Check:
   ```bash
-  curl -i http://localhost:8000/health/readiness
+  curl -i http://localhost:8000/health/liveness
   ```
 5. Ver docs de OpenAPI
   ```bash
@@ -78,17 +78,13 @@ Una vez obtenidos los archivos necesarios, se pueden colocar en las siguientes c
   ```
 4. Levantar FastAPI
   ```bash
-  uvicorn service.api.app:app --reload
+  uvicorn src.shared.main:app --reload
   ```
 5. Health Check liveness:
   ```bash
   curl -i http://127.0.0.1:8000/health/liveness
   ```
-6. Health Check readiness:
-  ```bash
-  curl -i http://127.0.0.1:8000/health/readiness
-  ```
-7. Ver docs de OpenAPI
+6. Ver docs de OpenAPI
   ```bash
   http://127.0.0.1:8000/docs
   ```
@@ -98,16 +94,6 @@ Una vez obtenidos los archivos necesarios, se pueden colocar en las siguientes c
 - Todos los tests:
   ```bash
   pytest -v --cov
-  ```
-
-- Unit tests:
-  ```bash
-  pytest tests/unit -v --cov
-  ```
-
-- Integration tests:
-  ```bash
-  pytest tests/integration -v --cov
   ```
 
 ## Consideraciones adicionales
@@ -121,22 +107,15 @@ Una vez obtenidos los archivos necesarios, se pueden colocar en las siguientes c
 ### Arquitectura
 
   ```text
-  AFRelay
+  AFRelay/
   ├── .github/
-  ├── config/
   ├── docs/
   ├── host_certs/
   ├── host_xml/
-  ├── service/
-  │   ├── api/
-  │   ├── app_certs/
-  │   ├── controllers/
-  │   ├── crypto/
-  │   ├── payload_builder/
-  │   ├── soap_client/
-  │   ├── time/
-  │   ├── utils/
-  │   └── xml_management/
+  ├── src/
+  │   ├── shared/
+  │   ├── wsaa/
+  │   └── wsfev1/
   ├── tests/
   ├── requirements-dev.txt
   └── requirements.txt
