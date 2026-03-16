@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=builder /install /usr/local
 
 RUN groupadd -r appuser && useradd -r -g appuser appuser
-RUN mkdir -p service/xml_management/app_xml_files service/app_certs service/crypto \ 
+RUN mkdir -p src/common/app_xml_files src/common/app_certs src/crypto \ 
     && chown -R appuser:appuser $APP_HOME
 
 COPY --chown=appuser:appuser . .
@@ -43,4 +43,4 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:8000/health/liveness || exit 1
 
 # Recommended: 1 worker. More than 1 worker isn't supported because of architectural limitations, which will be fixed in the future.
-CMD ["gunicorn", "-w", "1", "-k", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "--access-logfile", "-", "--error-logfile", "-", "service.api.app:app"]
+CMD ["gunicorn", "-w", "1", "-k", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "--access-logfile", "-", "--error-logfile", "-", "src.shared.main:app"]
