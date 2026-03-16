@@ -1,8 +1,8 @@
 from unittest.mock import MagicMock
 
-from service.xml_management.xml_builder import (
-    build_login_ticket_request, extract_token_and_sign_from_xml, is_expired,
-    parse_and_save_loginticketresponse, xml_exists)
+from src.wsaa.xml_management.xml_builder import (
+    build_login_ticket_request, is_expired, parse_and_save_loginticketresponse,
+    xml_exists)
 
 
 def test_build_login_ticket_request():
@@ -44,13 +44,6 @@ def test_parse_and_save_loginticketresponse():
     root_passed = mock_saver.call_args[0][0]
     assert root_passed.find("header") is not None
     assert root_passed.find("credentials") is not None
-
-def test_extract_token_and_sign_from_xml():
-
-    token, sign = extract_token_and_sign_from_xml()
-
-    assert token == "fake_token"
-    assert sign == "fake_sign"
 
 def test_loginTicketRequest_is_expired():
 

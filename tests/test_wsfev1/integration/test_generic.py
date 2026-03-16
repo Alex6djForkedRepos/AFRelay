@@ -1,20 +1,14 @@
 import pytest
 from httpx import AsyncClient
 
-from tests.integration.soap_responses import (FECAEAConsultarResponse,
-                             FECAEASinMovimientoInformarResponse,
-                             FEParamGetActividadesResponse,
-                             FEParamGetCondicionIvaReceptorResponse,
-                             FEParamGetCotizacionResponse,
-                             FEParamGetPtosVentaResponse,
-                             FEParamGetTiposCbteResponse,
-                             FEParamGetTiposConceptoResponse,
-                             FEParamGetTiposDocResponse,
-                             FEParamGetTiposIvaResponse,
-                             FEParamGetTiposMonedasResponse,
-                             FEParamGetTiposOpcionalResponse,
-                             FEParamGetTiposPaisesResponse,
-                             FEParamGetTiposTributosResponse)
+from tests.test_wsfev1.mocks.soap_responses import (
+    FECAEAConsultarResponse, FECAEASinMovimientoInformarResponse,
+    FEParamGetActividadesResponse, FEParamGetCondicionIvaReceptorResponse,
+    FEParamGetCotizacionResponse, FEParamGetPtosVentaResponse,
+    FEParamGetTiposCbteResponse, FEParamGetTiposConceptoResponse,
+    FEParamGetTiposDocResponse, FEParamGetTiposIvaResponse,
+    FEParamGetTiposMonedasResponse, FEParamGetTiposOpcionalResponse,
+    FEParamGetTiposPaisesResponse, FEParamGetTiposTributosResponse)
 
 
 @pytest.mark.asyncio
@@ -35,7 +29,7 @@ async def test_fecaea_sin_movimiento_informar_success(client: AsyncClient, wsfe_
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FECAEASinMovimientoInformar", json=payload)
+    resp = await client.post("/wsfev1/FECAEASinMovimientoInformar", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -60,7 +54,7 @@ async def test_fecaea_consultar_success(client: AsyncClient, wsfe_httpserver_fix
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FECAEAConsultar", json=payload)
+    resp = await client.post("/wsfev1/FECAEAConsultar", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -84,7 +78,7 @@ async def test_fe_param_get_cotizacion_success(client: AsyncClient, wsfe_httpser
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetCotizacion", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetCotizacion", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -107,7 +101,7 @@ async def test_fe_param_get_tipos_tributos_success(client: AsyncClient, wsfe_htt
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetTiposTributos", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetTiposTributos", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -130,7 +124,7 @@ async def test_fe_param_get_tipos_monedas_success(client: AsyncClient, wsfe_http
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetTiposMonedas", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetTiposMonedas", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -153,7 +147,7 @@ async def test_fe_param_get_tipos_iva_success(client: AsyncClient, wsfe_httpserv
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetTiposIva", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetTiposIva", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -176,7 +170,7 @@ async def test_fe_param_get_tipos_opcional_success(client: AsyncClient, wsfe_htt
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetTiposOpcional", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetTiposOpcional", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -199,7 +193,7 @@ async def test_fe_param_get_tipos_concepto_success(client: AsyncClient, wsfe_htt
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetTiposConcepto", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetTiposConcepto", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -222,7 +216,7 @@ async def test_fe_param_get_ptos_venta_success(client: AsyncClient, wsfe_httpser
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetPtosVenta", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetPtosVenta", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -245,7 +239,7 @@ async def test_fe_param_get_tipos_cbte_success(client: AsyncClient, wsfe_httpser
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetTiposCbte", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetTiposCbte", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -268,7 +262,7 @@ async def test_fe_param_get_condicion_iva_receptor_success(client: AsyncClient, 
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetCondicionIvaReceptor", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetCondicionIvaReceptor", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -291,7 +285,7 @@ async def test_fe_param_get_tipos_doc_success(client: AsyncClient, wsfe_httpserv
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetTiposDoc", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetTiposDoc", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -314,7 +308,7 @@ async def test_fe_param_get_tipos_paises_success(client: AsyncClient, wsfe_https
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetTiposPaises", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetTiposPaises", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -337,7 +331,7 @@ async def test_fe_param_get_actividades_success(client: AsyncClient, wsfe_httpse
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FEParamGetActividades", json=payload)
+    resp = await client.post("/wsfev1/FEParamGetActividades", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()

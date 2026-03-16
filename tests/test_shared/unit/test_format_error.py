@@ -1,4 +1,4 @@
-from service.soap_client.format_error import build_error_response
+from src.shared.utils.format_error import build_error_response
 
 
 def test_build_error_response():

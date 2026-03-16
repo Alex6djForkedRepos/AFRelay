@@ -1,6 +1,6 @@
 from unittest.mock import patch
 
-from service.time.time_management import generate_ntp_timestamp
+from src.wsaa.time.time_management import generate_ntp_timestamp
 
 
 def test_generate_ntp_timestamp():

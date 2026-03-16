@@ -3,7 +3,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 from zeep import AsyncClient
 
-from tests.integration.soap_responses import loginCmsResponse
+from tests.test_wsaa.mocks.soap_responses import loginCmsResponse
 
 
 @pytest.mark.asyncio
@@ -23,8 +23,8 @@ async def test_login_cms_success(
     # Magic mocks patched directly in the test for practicality
     xml_saver_mock = MagicMock()
     parse_and_save_loginticketresponse_mock = MagicMock()
-    with patch("service.controllers.request_access_token_controller.save_xml", xml_saver_mock):
-        with patch("service.controllers.request_access_token_controller.parse_and_save_loginticketresponse", parse_and_save_loginticketresponse_mock):
+    with patch("src.wsaa.controllers.request_access_token_controller.save_xml", xml_saver_mock):
+        with patch("src.wsaa.controllers.request_access_token_controller.parse_and_save_loginticketresponse", parse_and_save_loginticketresponse_mock):
                   
             resp = await client.post("/wsaa/loginCms")
 
@@ -56,8 +56,8 @@ async def test_login_cms_error(
     # Magic mocks patched directly in the test for practicality
     xml_saver_mock = MagicMock()
     parse_and_save_loginticketresponse_mock = MagicMock()
-    with patch("service.controllers.request_access_token_controller.save_xml", xml_saver_mock):
-        with patch("service.controllers.request_access_token_controller.parse_and_save_loginticketresponse", parse_and_save_loginticketresponse_mock):
+    with patch("src.wsaa.controllers.request_access_token_controller.save_xml", xml_saver_mock):
+        with patch("src.wsaa.controllers.request_access_token_controller.parse_and_save_loginticketresponse", parse_and_save_loginticketresponse_mock):
                   
             resp = await client.post("/wsaa/loginCms")
 

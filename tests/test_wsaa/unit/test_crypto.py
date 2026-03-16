@@ -1,6 +1,5 @@
-from service.crypto.sign import sign_login_ticket_request
-
-from ..conftest import generate_test_files
+from src.wsaa.crypto.sign import sign_login_ticket_request
+from tests.conftest import generate_test_files
 
 
 def test_sign_login_ticket_request():

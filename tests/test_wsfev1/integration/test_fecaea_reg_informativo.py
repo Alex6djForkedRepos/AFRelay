@@ -1,7 +1,7 @@
 import pytest
 from httpx import AsyncClient
 
-from tests.integration.soap_responses import FECAEARegInformativoResponse
+from tests.test_wsfev1.mocks.soap_responses import FECAEARegInformativoResponse
 
 
 @pytest.mark.asyncio
@@ -48,7 +48,7 @@ async def test_fecaea_reg_informativo_success(client: AsyncClient, wsfe_httpserv
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FECAEARegInformativo", json=payload)
+    resp = await client.post("/wsfev1/FECAEARegInformativo", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -100,7 +100,7 @@ async def test_fecaea_reg_informativo_error(client: AsyncClient, wsfe_httpserver
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FECAEARegInformativo", json=payload)
+    resp = await client.post("/wsfev1/FECAEARegInformativo", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()

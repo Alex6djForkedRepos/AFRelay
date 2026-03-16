@@ -1,15 +1,15 @@
 import pytest
 from httpx import AsyncClient
 
-from tests.integration.soap_responses import FeCompUltimoAutorizadoResponse
+from tests.test_wsfev1.mocks.soap_responses import FECompConsultarResponse
 
 
 @pytest.mark.asyncio
-async def test_fe_comp_ultimo_autorizado_success(client: AsyncClient, wsfe_httpserver_fixed_port, wsfe_manager, override_auth):
+async def test_fe_comp_consultar_success(client: AsyncClient, wsfe_httpserver_fixed_port, wsfe_manager, override_auth):
 
     # Configure http server
     wsfe_httpserver_fixed_port.expect_request("/soap", method="POST").respond_with_data(
-        FeCompUltimoAutorizadoResponse, content_type="text/xml"
+        FECompConsultarResponse, content_type="text/xml"
     )
 
     # Payload
@@ -17,12 +17,15 @@ async def test_fe_comp_ultimo_autorizado_success(client: AsyncClient, wsfe_https
         "Auth": {
             "Cuit": 30740253022
         },
-        "PtoVta": 1,
-        "CbteTipo": 6
+        "FeCompConsReq": {
+            "PtoVta": 1,
+            "CbteTipo": 6,
+            "CbteNro": 100,
+        }
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FECompUltimoAutorizado", json=payload)
+    resp = await client.post("/wsfev1/FECompConsultar", json=payload)
 
     assert resp.status_code == 200
     data = resp.json()
@@ -31,7 +34,7 @@ async def test_fe_comp_ultimo_autorizado_success(client: AsyncClient, wsfe_https
 
 # Generic error only for test the API behavior in error cases. Exceptions are already tested in unit tests.
 @pytest.mark.asyncio
-async def test_fe_comp_ultimo_autorizado_error(client: AsyncClient, wsfe_httpserver_fixed_port, wsfe_manager, override_auth):
+async def test_fe_comp_consultar_error(client: AsyncClient, wsfe_httpserver_fixed_port, wsfe_manager, override_auth):
 
     # Configure http server
     wsfe_httpserver_fixed_port.expect_request("/not_existent", method="POST").respond_with_data(
@@ -45,12 +48,15 @@ async def test_fe_comp_ultimo_autorizado_error(client: AsyncClient, wsfe_httpser
         "Auth": {
             "Cuit": 30740253022
         },
-        "PtoVta": 1,
-        "CbteTipo": 6
+        "FeCompConsReq": {
+            "PtoVta": 1,
+            "CbteTipo": 6,
+            "CbteNro": 100,
+        }
     }
 
     # Fastapi endpoint call
-    resp = await client.post("/wsfe/FECompUltimoAutorizado", json=payload)
+    resp = await client.post("/wsfev1/FECompConsultar", json=payload)
 
     assert resp.status_code == 200 # 200 its for FastAPI endpoint
     data = resp.json()
