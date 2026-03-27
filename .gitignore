@@ -25,9 +25,9 @@ __pycache__/
 !host_xml/.gitkeep
 !host_xml/README.md
 
-*service/xml_management/app_xml_files
-!service/xml_management/app_xml_files/.gitkeep
-!service/xml_management/app_xml_files/README.md
+*src/shared/app_xml_files
+!src/shared/app_xml_files/.gitkeep
+!src/shared/app_xml_files/README.md
 
 # Ignore .coverage file
 .coverage
