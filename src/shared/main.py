@@ -10,12 +10,12 @@ from fastapi.responses import JSONResponse
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from starlette.exceptions import HTTPException
 
+from src.shared import api_health_check
 from src.shared.utils.logger import logger
 from src.wsaa.api import wsaa_endpoints
 from src.wsaa.api.afip_token_scheduler import start_scheduler, stop_scheduler
 from src.wsfev1.api import wsfev1_endpoints
 from src.wsfev1.health_checks import wsfev1_health_checks
-from src.shared import api_health_check
 
 load_dotenv(override=False)
 
