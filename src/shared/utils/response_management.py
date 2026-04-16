@@ -1,3 +1,5 @@
+import xmltodict
+
 
 def build_error_response(method: str, error_type: str, details: str) -> dict:
     """
@@ -16,3 +18,10 @@ def build_error_response(method: str, error_type: str, details: str) -> dict:
             "details" : details
         }
     }
+
+def clear_response(response) -> dict:
+
+    response_parsed = xmltodict.parse(response.text)
+    cleaned_response = response_parsed["soap:Envelope"]["soap:Body"]
+
+    return cleaned_response
