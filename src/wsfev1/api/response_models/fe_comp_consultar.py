@@ -1,3 +1,5 @@
+from typing import Dict
+
 from pydantic import BaseModel, ConfigDict, Field
 
 from src.wsfev1.api.response_models.common import Errors, Events, Observaciones
@@ -13,7 +15,7 @@ class Comprador(BaseModel):
     Porcentaje: float
 
 class Compradores(BaseModel):
-    Comprador: list[Comprador]
+    Comprador: list[Comprador] | Dict
 
 class Opcional(BaseModel):
     Id: str
@@ -28,7 +30,7 @@ class AlicIva(BaseModel):
     Importe: float
 
 class Iva(BaseModel):
-    AlicIva: list[AlicIva]
+    AlicIva: list[AlicIva] | Dict
 
 class Tributo(BaseModel):
     Id: int
@@ -38,7 +40,7 @@ class Tributo(BaseModel):
     Importe: float
 
 class Tributos(BaseModel):
-    Tributo: list[Tributo]
+    Tributo: list[Tributo] | Dict
 
 class CbteAsoc(BaseModel):
     Tipo: int
@@ -99,5 +101,11 @@ class FECompConsultarResult(BaseModel):
     events: Events | None = Field(None, alias="Events")
 
 class FECompConsultarResponse(BaseModel):
+    FECompConsultarResult: FECompConsultarResult
+
+class FECompConsultarMainClass(BaseModel):
+    FECompConsultarResponse: FECompConsultarResponse
+
+class FECompConsultarFullResponse(BaseModel):
     status: str
-    response: FECompConsultarResult
+    response: FECompConsultarMainClass
