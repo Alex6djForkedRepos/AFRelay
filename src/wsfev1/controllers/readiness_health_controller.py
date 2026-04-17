@@ -1,10 +1,10 @@
 import socket
 
 import ntplib
-from zeep.helpers import serialize_object
 
 from src.shared.utils.logger import logger
-from src.wsfev1.soap_client.wsfev1 import wsfe_dummy
+from src.wsfev1.soap_client import templates
+from src.wsfev1.soap_client.wsfev1 import consult_afip_wsfev1
 
 
 async def readiness_health_check() -> dict:
@@ -25,17 +25,14 @@ async def readiness_health_check() -> dict:
         logger.warning("NTP readiness check FAILED")
 
     # Check WSFE 
-    wsfe_health_info = await wsfe_dummy()
+    wsfev1_health_info = await consult_afip_wsfev1(templates.FEDummy ,"FEDummy")
 
-    # Zeep returns an object of type '<class 'zeep.objects.[service response]'>'.
-    # To work with the returned data, this object needs to be converted into a dictionary using serialize_object().
-    wsfe_health_info_parsed = serialize_object(wsfe_health_info)
     logger.debug("WSFE dummy check OK")
 
     logger.debug("Readiness health check finished")
     return {
         "ntp" : ntp,
-        "wsfe_health" : wsfe_health_info_parsed
+        "wsfe_health" : wsfev1_health_info
         }
 
 def request_ntp_for_readiness() -> bool:
