@@ -12,9 +12,6 @@ from src.wsfev1.soap_client.client_manager import WSFEClientManager
 from src.wsfev1.soap_client.url_manager import get_wsfe_url
 
 
-def consult_afip_wsfe():
-    pass
-
 @retry(
         retry=retry_if_exception_type(( ConnectionResetError, httpx.ConnectError )),
         stop=stop_after_attempt(3),
