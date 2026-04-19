@@ -1,6 +1,7 @@
+from unittest.mock import AsyncMock, MagicMock
+
 import httpx
 import pytest
-from unittest.mock import AsyncMock, MagicMock
 
 from src.wsfev1.soap_client.wsfev1 import consult_afip_wsfev1
 
