@@ -32,7 +32,13 @@ async def test_fe_comp_ultimo_autorizado_success(client: AsyncClient, wsfe_https
 
 # Generic error only for test the API behavior in error cases. Exceptions are already tested in unit tests.
 @pytest.mark.asyncio
-async def test_fe_comp_ultimo_autorizado_error(client: AsyncClient, wsfe_httpserver_fixed_port, wsfe_manager, override_auth):
+async def test_fe_comp_ultimo_autorizado_error(
+                                        client: AsyncClient, 
+                                        wsfe_httpserver_fixed_port, 
+                                        patch_url_wsfev1_dependencies, 
+                                        wsfe_manager, 
+                                        override_auth
+                                    ):
 
     # Configure http server
     wsfe_httpserver_fixed_port.expect_request("/not_existent", method="POST").respond_with_data(
