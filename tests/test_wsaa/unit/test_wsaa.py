@@ -84,7 +84,7 @@ async def test_consult_afip_wsaa_timeout():
 
 
 @pytest.mark.asyncio
-async def test_consult_afip_wsaa_timeout():
+async def test_consult_afip_wsaa_unknown_error():
 
     mock_client = AsyncMock()
     mock_client.post.side_effect = Exception
