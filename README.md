@@ -124,7 +124,7 @@ Once the necessary files have been obtained, they can be placed in the following
 
 ## License
 
-This project is licensed under the [MIT](./LICENSE) license (a permissive open-source license).
+This project is licensed under the [MIT](./LICENSE) license.
 
 You are free to use, copy, modify, and distribute the software, always including the copyright notice and without any warranties.
 
