@@ -111,7 +111,7 @@ Una vez obtenidos los archivos necesarios, se pueden colocar en las siguientes c
   2. ```bash chmod -R 775 ./host_xml```
 
   Si usas un sistema con SELinux, tambien ejecuta el siguiente comando como ultimo paso:  
-  3. ```bash $ sudo chcon -Rt svirt_sandbox_file_t ./host_xml```
+  - ```bash $ sudo chcon -Rt svirt_sandbox_file_t ./host_xml```
 
 ### Arquitectura
 
