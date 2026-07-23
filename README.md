@@ -105,6 +105,23 @@ Once the necessary files have been obtained, they can be placed in the following
 - **Flexible deployment:**
   Using Docker is optional. The service can run directly or inside any Python environment, as long as input and output file formats are respected. Protecting credentials (tokens, certificates) is the responsibility of the user or system administrator.
 
+- **Write permissions in UNIX/Linux systems:**  
+  Since the system needs to write the `loginTicketRequest.xml` file, the `/app/src/shared/app_xml_files` directory must have write permissions. To grant write permissions:
+
+  1.
+  ```bash
+  sudo chown -R $(id -u):$(id -g) ./host_xml
+  ```
+  2.
+  ```bash
+  chmod -R 775 ./host_xml
+  ```
+
+  If the developer uses a system with SELinux, they must also run the following command as a final step:
+  ```bash
+  sudo chcon -Rt svirt_sandbox_file_t ./host_xml
+  ```
+
 ### Architecture
 
   ```text

@@ -105,7 +105,7 @@ Una vez obtenidos los archivos necesarios, se pueden colocar en las siguientes c
   No es obligatorio usar Docker. El servicio puede ejecutarse directamente o dentro de cualquier entorno Python, siempre que se respeten los formatos de los archivos de entrada y salida. La protección de las credenciales (tokens, certificados) es responsabilidad del usuario o administrador del entorno.
 
 - **Permisos de escritura en sistemas UNIX/Linux:**  
-  Como el sistema necesita escribir el archivo loginTicketRequest.xml, el directorio /app/src/shared/app_xml_files debe tener permisos de escritura. Para dar permisos de escritura:
+  Como el sistema necesita escribir el archivo `loginTicketRequest.xml`, el directorio `/app/src/shared/app_xml_files` debe tener permisos de escritura. Para dar permisos de escritura:
 
   1.
   ```bash
@@ -116,7 +116,7 @@ Una vez obtenidos los archivos necesarios, se pueden colocar en las siguientes c
   chmod -R 775 ./host_xml
   ```
 
-  Si usas un sistema con SELinux, tambien ejecuta el siguiente comando como ultimo paso:  
+  Si el desarrollador usa un sistema con SELinux, tambien debe ejecutar el siguiente comando como ultimo paso:  
   ```bash
   sudo chcon -Rt svirt_sandbox_file_t ./host_xml
   ```
