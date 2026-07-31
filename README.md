@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/codecov/c/github/NehuenLian/AFRelay?label=coverage&token=20WL0URAGI" alt="coverage">
   <img src="https://img.shields.io/github/license/NehuenLian/AFRelay" alt="License">
   <img src="https://img.shields.io/github/issues/NehuenLian/AFRelay" alt="Issues">
+  <br>
 </p>
 
 <p align="center">
